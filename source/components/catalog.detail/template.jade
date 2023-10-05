@@ -1,0 +1,151 @@
+﻿// start /components/catalog.detail/
+
+link( rel="stylesheet", href="/components/catalog.detail/style.css" )
+script( src="/components/catalog.detail/script.js" )
+
+.row
+
+  include ../../modules/catalog-detail-links/include
+    
+  .col-sm-8
+    h1.i-small Мужское зимнее шерстяное пальто VENTUNO BLACK черно-серого цвета
+  .col-sm-4.text-right
+    a.back-to-catalogue( href="../" ) Вернуться в каталог
+
+script( src="/template/zoomsl-3.0.min.js" )
+script( src="/components/catalog.detail/download.js" )
+    
+.b-catalog-detail__props-icons.text-right
+  .b-prop(style="color: #ca3538; border-color: #ca3538;") 35%
+  .b-prop(style="color: #528b16; border-color: #528b16;") Рекомендуем
+  .b-prop(style="color: #f09e00; border-color: #f09e00;") Хит
+  .b-prop(style="color: #8e42b1; border-color: #8e42b1;") Акция
+  .b-prop(style="color: #8e42b1; border-color: #8e42b1;") Новинка
+    
+hr
+  
+.row
+
+  .col-sm-6.b-catalog-detail__gallery
+
+    a.b-catalog-detail__gallery-zip( href="archive.zip")
+      svg( xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32")
+        g( transform="translate(-428 -188)")
+          path( d="M7.42,2.65a3.409,3.409,0,0,0-.66-.22,5.368,5.368,0,0,0-1.52-.21H1.69L.39.49A5.98,5.98,0,0,0,0,0H3.38A4.394,4.394,0,0,1,7.42,2.65Z" transform="translate(446.294 190)" fill="#dc2f02" )
+          path( d="M25.4,6.356a5.852,5.852,0,0,0-2.03-.938,5.779,5.779,0,0,0-1.554-.21H16.6c-.812,0-.868-.07-1.3-.644l-1.96-2.6A4.013,4.013,0,0,0,9.436,0H6.188A6.19,6.19,0,0,0,0,6.188V21.812A6.19,6.19,0,0,0,6.188,28H21.812A6.19,6.19,0,0,0,28,21.812V11.4A6.147,6.147,0,0,0,25.4,6.356Zm-8.05,13.72H10.64a.98.98,0,0,1,0-1.96h6.706a.98.98,0,0,1,0,1.96Z" transform="translate(430 190)" fill="#dc2f02" )
+          path( d="M0,0H32V32H0Z" transform="translate(460 220) rotate(180)" fill="none" opacity="0" )
+          circle( cx="3" cy="3" r="3" transform="translate(441 201)" fill="#fff" )
+      span
+        b Все фото
+        | ZIP 322 Мб
+  
+    include ../../modules/gallery/fotorama
+    include ../../modules/gallery/include
+    
+  hr.visible-xs-block.i-size-L
+  
+  .col-sm-6
+  
+    - var id = 10
+
+    #catalogDetailWrap
+
+    #catalogDetailNotAuth
+      
+      .b-catalog-detail__auth-reg
+
+        .b-catalog-detail__not-auth
+          .b-catalog-detail__not-auth__text Цены и размерная сетка доступны только зарегистрированным оптовым клиентам.
+          .b-catalog-detail__not-auth__buttons
+            .btn.btn-default Войти
+            a.btn.btn-default( href="/forms/reg/" ) Зарегистрироваться
+      
+        .b-catalog-detail__reg
+          .b-catalog-detail__reg__text Введите ваши регистрационные данные
+      
+          form( action="/components/catalog.detail/download.html" method="GET" ) 
+
+            .b-catalog-detail__reg__form
+          
+              .b-float-label
+                input#regFormEmail( type="text" name="REGISTER[EMAIL]" value="" autocomplete="on" )
+                label( for="regFormEmail" ) Адрес e-mail
+                
+              hr.i-size-M
+            
+              .b-float-label
+                input#regFormPass( type="password" name="REGISTER[PASSWORD]" value="" autocomplete="off" )
+                label( for="regFormPass" ) Пароль
+
+            .b-catalog-detail__reg__button
+              button.btn.btn-default( type="submit" ) Войти 
+
+          .b-catalog-detail__reg__note Или
+            | 
+            a( href="/forms/reg/" ) зарегистрируйтесь.
+
+    .item-information
+    
+      .b-catalog-brand
+        span Бренд: Bazioni
+      
+      .b-catalog-brand
+        img( src="/upload/brand-logo.jpg" width="130" height="40" alt="" )
+        span Бренд: Bazioni
+          
+    hr
+          
+    .item-details-accordeon
+    
+      .collapsing-block
+        .h3(style='padding-top: 15px; padding-bottom: 15px; margin:0px; cursor:pointer;') Описание
+        .collapsing-content
+          .inner
+            p Мужской полуприлегающий костюм PIZANO синего цвета Classic fit ABSOLUTEX
+      .collapsing-block.closed
+        .h3(style='padding-top: 15px; padding-bottom: 15px; margin:0px; cursor:pointer;') Детали
+        .collapsing-content
+          .inner
+            | Артикул: 1321* M PIZANO
+            br
+            | 			Состав: 30%шерсть, 50%вискоза, 20% полиэстер
+            br
+            | 									Сезон: Мультисезон
+            br
+            | 			Страна производитель: РОССИЯ
+            br
+      .collapsing-block.closed
+        .h3(style='padding-top: 15px; padding-bottom: 15px; margin:0px; cursor:pointer;') Силуэт
+        .collapsing-content
+          .inner
+            hr
+            .row
+              .col-sm-4
+                img(src='/upload/iblock/a38/a38787fb79bf3a052425d3b79813f860.jpg', alt='Силуэт', width='144')
+              .col-sm-6
+                | Полуприлегающий силуэт (Classic fit)
+                br
+                |  Это силуэт вещей, которые не очень плотно сидят на фигуре, скрывая некоторые недостатки, но в то же время такой силуэт нельзя назвать просторным. Такой силуэт подходит для большинства типов фигур.
+                br
+      .collapsing-block.closed
+        .h3(style='padding-top: 15px; padding-bottom: 15px; margin:0px; cursor:pointer;') Доставка и возврат
+        .collapsing-content
+          .inner
+            p
+              | Ознакомьтесь, пожалуйста, 
+              a(href='/about/delivery/') с условиями доставки.
+            p
+              | Если вещь по каким-то причинам не подошла Вам, мы без проблем обменяем ее на нужный размер или вернем деньги в установленный законом срок. Обмен и возврат возможны, только если вещь не была в употреблении, сохранены товарный вид (а также ярлыки, этикетки, упаковка) и чек. 
+              a(href='/about/delivery/vozvrat.php') Подробнее об обмене и возврате.
+              
+      hr
+
+      .item-feedback Если у вас есть вопросы, пожалуйста, позвоните нашим операторам! <br> <span>8 (495) 281-52-52</span>
+    
+hr
+.text-center
+  a.back-to-catalogue( href="../" ) Вернуться в каталог
+              
+hr
+
+// end /components/catalog.detail/

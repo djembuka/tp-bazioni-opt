@@ -1,0 +1,118 @@
+// start /components/sale.personal.profile.form/
+
+link( rel="stylesheet", href="/components/sale.personal.profile.form/style.css" )
+script( src="/components/sale.personal.profile.form/script.js" )
+
+#profile-form
+  .b-profile-form__type <span>Тип платетльщика:</span> Юридическое лицо
+  .b-profile-form__title Данные юридического лица
+  .b-profile-form__body.b-form-wrapper
+    form(method="post" action="/registration/" name="regform" enctype="multipart/form-data")
+
+      .b-float-label.show-inn
+        #InnFillButton.b-float-label__inn( data-url="/components/sale.personal.profile.form/fillByInn.json" ) Заполнить по ИНН
+        input#regFormINN( type="text" name="REGISTER[INN]" value="" autocomplete="on" data-required="true" )
+        label( for="regFormINN" ) ИНН
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormName( type="text" name="REGISTER[NAME]" value="" autocomplete="off" data-required="true" )
+        label( for="regFormName" ) Наименование ЮЛ/ИП
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormAddress( type="text" name="REGISTER[ADDRESS]" value="" autocomplete="off" data-required="true" )
+        label( for="regFormAddress" ) Юридический адрес
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormPostAddress( type="text" name="REGISTER[POST_ADDRESS]" value="" autocomplete="on" data-required="true" )
+        label( for="regFormPostAddress" ) Почтовый адрес
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormKPP( type="text" name="REGISTER[KPP]" value="" autocomplete="on" data-required="true" )
+        label( for="regFormKPP" ) КПП
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormOGRN( type="tel" name="REGISTER[OGRN]" value="" autocomplete="on" data-required="true" )
+        label( for="regFormOGRN" ) ОГРН / ОГРНИП
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormRS( type="text" name="REGISTER[RS]" value="" autocomplete="on" data-required="true" )
+        label( for="regFormRS" ) Расчетный счет
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormBank( type="text" name="REGISTER[BANK]" value="" autocomplete="on" data-required="true" )
+        label( for="regFormBank" ) Банк
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormBIK( type="text" name="BIK" value="" autocomplete="on" data-required="true" )
+        label( for="regFormBIK" ) БИК
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#letterFormKS( type="text" name="KS" value="" )
+        label( for="letterFormKS" ) Корреспондентский счет
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#letterFormFIO( type="text" name="FIO" value="" )
+        label( for="letterFormFIO" ) ФИО представителя Клиента (для договора)
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormOsn( type="text" name="Osn" value="" autocomplete="on" )
+        label( for="regFormOsn" ) Основание полномочий представителя Клиента (для договора)
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormUved( type="text" name="Uved" value="" autocomplete="on" )
+        label( for="regFormUved" ) Адрес клиента для уведомлений (для договора)
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormKL( type="text" name="KL" value="" autocomplete="on" )
+        label( for="regFormKL" ) Контактное лицо
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormTel( type="text" name="tel" value="" autocomplete="on" )
+        label( for="regFormTel" ) Тел/факс
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormEmail( type="text" name="Email" value="" autocomplete="on" )
+        label( for="regFormEmail" ) Email
+        
+      hr.i-size-M
+    
+      .b-float-label
+        input#regFormSite( type="text" name="Site" value="" autocomplete="on" )
+        label( for="regFormSite" ) Сайт
+
+      hr.i-size-M
+      
+      .button-block
+        input.button.button-default(type="submit" name="register_submit_button" value="Сохранить")
+
+// end /components/sale.personal.profile.form/

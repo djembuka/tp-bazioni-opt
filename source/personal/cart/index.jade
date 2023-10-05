@@ -1,0 +1,16 @@
+﻿extends ../../layouts/main.jade
+
+block title
+  title Basket | Seller
+
+block content
+
+  .container-fluid
+    
+    ol.breadcrumb.hidden-xs
+      li
+        a(href='/', title='Главная страница') Главная страница
+      li
+        span Моя корзина
+        
+    include ../../components/sale.basket.basket/template

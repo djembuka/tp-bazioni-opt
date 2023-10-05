@@ -1,0 +1,24 @@
+extends ../../layouts/main.jade
+
+block title
+  title С этим товаром рекомендуем | Seller
+
+block content
+
+  .container-fluid
+    
+    hr.i-size-L
+    hr.i-size-L
+    hr.i-size-L
+
+    include ../../modules/gallery/swiper
+    
+    include ../../components/catalog.recommend/template
+    
+    hr.i-size-L
+    
+    .row
+      
+      .col-sm-6
+        include ../../components/catalog.recommend/template-50
+          

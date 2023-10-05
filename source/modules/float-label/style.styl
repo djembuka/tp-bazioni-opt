@@ -1,0 +1,81 @@
+@import '../../styl/component-include.styl'
+
+.b-float-label
+  position relative
+  margin-top 1rem
+  margin-bottom 1rem
+  color #000
+  
+  input:not([type=checkbox]),
+  input:not([type=radio]),
+  textarea
+  
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    outline: none;
+    height: 2.7rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 8px 0;
+    padding: 0 10px;
+    box-shadow: none;
+    box-sizing: border-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    
+    &.i-invalid,
+    &:invalid
+      border-color: #ff0000;
+      color: #ff0000;
+      
+      &+label
+        color: #ff0000;
+    
+    &.validate+label
+      width: 100%
+    
+    &+label:after
+      display: block;
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      opacity: 0;
+      transition( .2s opacity ease-out, .2s color ease-out );
+    
+    &:focus:not([readonly])
+      box-shadow: none;
+      border-bottom: none;
+      border: 1px solid #9900cc;
+    
+      &+label
+        color #9900cc
+        transform( translateY( -1.6rem ) scale( 0.8 ))
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0
+        
+  textarea
+    padding 10px
+    height 100px
+    
+  label
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: .8rem;
+    font-weight: normal;
+    cursor: text;
+    -webkit-transition: color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: color .2s ease-out, -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out;
+    transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    transform( translateY( .6rem ) translateX( 1rem ))
+
+    &:not(.label-icon).active
+      transform( translateY( -1.6rem ) scale( 0.8 ))
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0

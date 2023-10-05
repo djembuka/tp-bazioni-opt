@@ -1,0 +1,134 @@
+﻿// start /components/catalog.detail/
+
+link( rel="stylesheet", href="/components/catalog/style.css" )
+script( src="/components/catalog/script.js" )
+
+.row
+  .col-sm-12
+    hr
+    noindex
+      .row
+        .col-sm-4.col-xs-12
+          .bj-sorting
+            .text-muted Сортировка:
+            .dropdown
+              a#dLabel(href="#" role="button" data-toggle="dropdown" data-target="#" style="width: 277px;" aria-expanded="false")
+                | Популярные
+                span.caret
+              ul.dropdown-menu(role="menu" aria-labelledby="dLabel")
+                //
+                  li><a href="/catalog/verkhnyaya_odezhda/?sort=cheap&PAGEN_3=25#sort">Недорогие</a></li>
+                  <li><a href="/catalog/verkhnyaya_odezhda/?sort=new&PAGEN_3=25#sort">Новые</a></li>
+                  <li><a href="/catalog/verkhnyaya_odezhda/?sort=popular&PAGEN_3=25#sort">Популярные</a></li
+                li
+                  a(href="/catalog/kurtki_1/?sort=cheap#sort") По цене (по возрастанию)
+                li
+                  a(href="/catalog/kurtki_1/?sort=uncheap#sort") По цене (по убыванию)
+                li
+                  a(href="/catalog/kurtki_1/?sort=new#sort") Новые
+                li
+                  a(href="/catalog/kurtki_1/?sort=popular#sort") Популярные
+                li
+                  a(href="/catalog/kurtki_1/?sort=quantity#sort") По остаткам (по возрастанию)
+                li
+                  a(href="/catalog/kurtki_1/?sort=unquantity#sort") По остаткам (по убыванию)
+            .clearfix
+            
+        hr.visible-xs.clearfix.i-size-L
+            
+        .col-sm-2.col-xs-12
+          .dropdown
+            a.form-control.filter-button(href="#filterBlock" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="filterBlock")
+              | Фильтр
+              
+      link(href="/bitrix/components/bejetstore/catalog.v4/templates/.default/style.css" rel="stylesheet")
+      
+      include catalog-filter
+              
+  hr.clearfix.i-size-L
+  .col-sm-12.bj-catalogue-group
+    hr
+    .bj-tag-panel
+      a(href="/catalog/plashchi/") Плащи 
+      a(href="/catalog/pukhoviki_1/") ПУХОВИКИ 
+    hr
+    // -----a---111----
+    // -----a---111----
+    .row
+      .col-sm-6
+      hr.visible-xs
+      .col-sm-6.text-right
+        div(data-pagination-num="")
+          // pagination-container
+          .b-pagination(data-pagination-num="2")
+            .b-pagination-block
+              span.active 1
+              a(href="/catalog/kurtki_1/?PAGEN_1=2") 2
+              a(href="/catalog/kurtki_1/?PAGEN_1=3") 3
+              span ...
+              a(href="/catalog/kurtki_1/?PAGEN_1=14") 14
+              a(href="/catalog/kurtki_1/?PAGEN_1=15") 15
+              a.i-forward(href="/catalog/kurtki_1/?PAGEN_1=2") Следующая
+          // pagination-container
+    hr.i-line.i-size-L
+    link(rel="stylesheet" type="text/css" href="/bitrix/templates/bejet_seller_absolutex.v2/components/bejetstore/catalog.section.v4/tabs3col/modal.css")
+
+    .bx_catalog_top_home
+      link(href="/bitrix/templates/bejet_seller_absolutex.v2/components/bejetstore/catalog.section.v4/tabs3col/style-dop.css" type="text/css" rel="stylesheet")
+      link(href="/bitrix/components/kombox/filter/templates/horizontal/style-default.css" type="text/css" rel="stylesheet")
+      .row
+        .col-xs-6.col-md-3
+          
+          include catalog-element
+          
+        .col-xs-6.col-md-3
+        
+          include catalog-element
+          
+        hr.visible-xs.clearfix
+          
+        .col-xs-6.col-md-3
+          
+          include catalog-element2
+          
+        .col-xs-6.col-md-3
+        
+          include catalog-element
+          
+      hr.i-line.i-size-L
+      
+      .row
+        .col-xs-6.col-md-3
+          
+          include catalog-element2
+          
+        .col-xs-6.col-md-3
+        
+          include catalog-element
+          
+        hr.visible-xs.clearfix
+          
+        .col-xs-6.col-md-3
+          
+          include catalog-element
+          
+        .col-xs-6.col-md-3
+        
+          include catalog-element
+      
+    hr.i-line.i-size-L
+    .row
+      .col-sm-6
+      hr.visible-xs
+      .col-sm-6.text-right
+        .b-pagination(data-pagination-num="2")
+          .b-pagination-block
+            span.active 1
+            a(href="/catalog/kurtki_1/?PAGEN_1=2") 2
+            a(href="/catalog/kurtki_1/?PAGEN_1=3") 3
+            span ...
+            a(href="/catalog/kurtki_1/?PAGEN_1=14") 14
+            a(href="/catalog/kurtki_1/?PAGEN_1=15") 15
+            a.i-forward(href="/catalog/kurtki_1/?PAGEN_1=2") Следующая
+
+// end /components/catalog.detail/

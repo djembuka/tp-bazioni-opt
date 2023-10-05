@@ -1,0 +1,102 @@
+
+<!-- start /components/sale.personal.profile.form/-->
+<link rel="stylesheet" href="/components/sale.personal.profile.form/style.css"/>
+<script src="/components/sale.personal.profile.form/script.js"></script>
+<div id="profile-form">
+  <div class="b-profile-form__type"><span>Тип платетльщика:</span> Юридическое лицо</div>
+  <div class="b-profile-form__title">Данные юридического лица</div>
+  <div class="b-profile-form__body b-form-wrapper">
+    <form method="post" action="/registration/" name="regform" enctype="multipart/form-data">
+      <div class="b-float-label show-inn">
+        <div id="InnFillButton" data-url="/components/sale.personal.profile.form/fillByInn.json" class="b-float-label__inn">Заполнить по ИНН</div>
+        <input id="regFormINN" type="text" name="REGISTER[INN]" value="" autocomplete="on" data-required="true"/>
+        <label for="regFormINN">ИНН</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormName" type="text" name="REGISTER[NAME]" value="" autocomplete="off" data-required="true"/>
+        <label for="regFormName">Наименование ЮЛ/ИП</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormAddress" type="text" name="REGISTER[ADDRESS]" value="" autocomplete="off" data-required="true"/>
+        <label for="regFormAddress">Юридический адрес</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormPostAddress" type="text" name="REGISTER[POST_ADDRESS]" value="" autocomplete="on" data-required="true"/>
+        <label for="regFormPostAddress">Почтовый адрес</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormKPP" type="text" name="REGISTER[KPP]" value="" autocomplete="on" data-required="true"/>
+        <label for="regFormKPP">КПП</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormOGRN" type="tel" name="REGISTER[OGRN]" value="" autocomplete="on" data-required="true"/>
+        <label for="regFormOGRN">ОГРН / ОГРНИП</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormRS" type="text" name="REGISTER[RS]" value="" autocomplete="on" data-required="true"/>
+        <label for="regFormRS">Расчетный счет</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormBank" type="text" name="REGISTER[BANK]" value="" autocomplete="on" data-required="true"/>
+        <label for="regFormBank">Банк</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormBIK" type="text" name="BIK" value="" autocomplete="on" data-required="true"/>
+        <label for="regFormBIK">БИК</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="letterFormKS" type="text" name="KS" value=""/>
+        <label for="letterFormKS">Корреспондентский счет</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="letterFormFIO" type="text" name="FIO" value=""/>
+        <label for="letterFormFIO">ФИО представителя Клиента (для договора)</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormOsn" type="text" name="Osn" value="" autocomplete="on"/>
+        <label for="regFormOsn">Основание полномочий представителя Клиента (для договора)</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormUved" type="text" name="Uved" value="" autocomplete="on"/>
+        <label for="regFormUved">Адрес клиента для уведомлений (для договора)</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormKL" type="text" name="KL" value="" autocomplete="on"/>
+        <label for="regFormKL">Контактное лицо</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormTel" type="text" name="tel" value="" autocomplete="on"/>
+        <label for="regFormTel">Тел/факс</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormEmail" type="text" name="Email" value="" autocomplete="on"/>
+        <label for="regFormEmail">Email</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="b-float-label">
+        <input id="regFormSite" type="text" name="Site" value="" autocomplete="on"/>
+        <label for="regFormSite">Сайт</label>
+      </div>
+      <hr class="i-size-M"/>
+      <div class="button-block">
+        <input type="submit" name="register_submit_button" value="Сохранить" class="button button-default"/>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- end /components/sale.personal.profile.form/-->

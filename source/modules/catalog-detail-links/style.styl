@@ -1,0 +1,88 @@
+@import '../../styl/component-include.styl'
+
+#catalogDetailNextLink,
+#catalogDetailPrevLink {
+  display: block !important;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow( 0 0 20px rgb( 231, 231, 231 ))
+  position: fixed;
+  top: 50vh;
+  left: calc( (100vw - 1200px)/2 - 24px );
+  margin-top: -24px;
+  opacity: 0;
+  transition( all .5s ease )
+  transform( translateX( -20px ))
+  z-index: 1000;
+}
+
+#catalogDetailNextLink {
+    left: auto;
+    right: calc( (100vw - 1200px)/2 - 24px );
+    transform( translateX( 20px ))
+}
+
+@media( max-width: 1274px ) {
+  #catalogDetailPrevLink {
+    left: 10px;
+  }
+  #catalogDetailNextLink {
+    right: 10px;
+  }
+}
+
+@media( max-width: 1024px ) {
+  #catalogDetailPrevLink,
+  #catalogDetailNextLink {
+    opacity: .7;
+    transform( translateX(0))
+  }
+}
+
+@media( max-width: 767px ) {
+  #catalogDetailNextLink,
+  #catalogDetailPrevLink {
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+  }
+}
+
+#catalogDetailNextLink.i-appear,
+#catalogDetailPrevLink.i-appear {
+    opacity: .7;
+    transform( translateX(0))
+}
+
+/*hide class is for mobile version, when the buttons are always visible, except footer area*/
+#catalogDetailNextLink.i-hide,
+#catalogDetailPrevLink.i-hide {
+  opacity: 0;
+  
+  &:hover {
+    opacity: 0 !important;
+  }
+}
+#catalogDetailNextLink.i-hide {
+  transform( translateX( 20px ))
+}
+#catalogDetailPrevLink.i-hide {
+  transform( translateX( -20px ))
+}
+  
+.catalog-detail-svg {
+  fill: none;
+  stroke: #1f1410;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+#catalogDetailNextLink:hover,
+#catalogDetailPrevLink:hover
+  opacity: 1;
+  
+  .catalog-detail-svg
+    stroke: #90c;

@@ -1,0 +1,47 @@
+@import '../../styl/component-include.styl'
+
+.b-forms-letter
+  border 1px solid #f2f2f2
+  padding 40px 0
+  position relative
+  
+  input[ type=email ]
+    background-image none
+  
+  @media( max-width 767px)
+    padding 20px
+  
+  .btn
+    width 250px
+    
+    @media( max-width 500px )
+      width 100%
+
+  .row
+    margin-bottom 0
+    
+  .b-float-label
+  
+    textarea
+      width 100%
+      height 200px
+    
+  &__error
+    color #ff0000
+    display none
+    
+  &__response
+    text-align center
+    line-height 1.2
+    
+    img
+      margin 0 auto
+      width 250px
+      height auto
+      display block
+    
+    p
+      font-size 22pt
+  
+    .btn
+      width 250px

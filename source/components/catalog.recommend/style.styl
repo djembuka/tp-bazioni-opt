@@ -1,0 +1,83 @@
+@import '../../styl/component-include.styl'
+
+.swiper-slide .bx_catalog_item
+  float none
+  
+.b-catalog-recommend
+
+  &.i-show
+    height auto !important
+    overflow visible !important
+    position static !important
+    
+    &:before
+      display none
+
+  &__gallery
+    position relative
+
+  .swiper-button-next,
+  .swiper-button-prev
+    width 48px
+    height 48px
+    top calc( (100% - 94px) / 2 )
+    margin-top -24px
+    background-color #fff
+    border-radius 50%
+    box-shadow( 0 0 20px rgb( 231, 231, 231 ))
+    opacity 0
+    transition( opacity .3s ease )
+    
+    &.swiper-button-disabled
+      opacity 0
+      
+    
+    &:after
+      font-size 24px
+      line-height 24px
+      color #000
+      transition( color .3s ease )
+      
+    &:hover:after
+      color #9900cc
+    
+    &:focus
+      outline none
+      
+  .swiper-button-next
+    right -24px
+    
+    @media( max-width 1200px )
+      right -15px
+      
+    &:after
+      margin-right -4px
+      
+  .swiper-button-prev
+    left -24px
+    
+    @media( max-width 1200px )
+      left -15px
+    
+    &:after
+      margin-left -4px
+      
+  &:hover
+    
+    .swiper-button-next,
+    .swiper-button-prev
+      opacity 1
+      
+      &.swiper-button-disabled
+        opacity 0
+        
+  .b-actions-item__title a
+    height 34px
+    overflow hidden
+        
+@media( max-width 1023px )
+  .swiper-button-next,
+  .swiper-button-prev
+    display none !important
+    
+@import '../../components/actions/style.styl'

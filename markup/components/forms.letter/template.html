@@ -1,0 +1,49 @@
+
+<!-- start /components/forms.letter/-->
+<link rel="stylesheet" href="/components/forms.letter/style.css"/>
+<script src="/components/forms.letter/script.js"></script>
+<div class="b-forms-letter">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <form action="/forms/letter/response/" method="GET">
+        <div class="b-forms-letter__error">Произошла ошибка!
+          <hr/>
+        </div>
+        <p>Мы внимательно относимся к вашему мнению и следим за качеством оказываемых услуг. Если у вас возникли проблемы или предложения, напишите нам.</p>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="b-float-label">
+              <input id="letterFormName" type="text" name="NAME" value="" autocomplete="off" data-required="true"/>
+              <label for="letterFormName">Ваше имя</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="b-float-label">
+              <input id="letterFormEmail" type="email" name="EMAIL" value="" autocomplete="off" data-required="true"/>
+              <label for="letterFormEmail">Ваш email</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="b-float-label">
+              <input id="letterFormCompany" type="text" name="COMPANY" value="" autocomplete="off"/>
+              <label for="letterFormCompany">Название организации</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="b-float-label">
+              <textarea id="letterFormMessage" name="MESSAGE" value="" autocomplete="off" data-required="true"></textarea>
+              <label for="letterFormMessage">Сообщение</label>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Отправить" class="btn btn-default btn-size-L btn-font-S btn-filled btn-disabled"/>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- end /components/forms.letter/-->

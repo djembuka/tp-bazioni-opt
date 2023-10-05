@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru" class="bx-no-touch">
+  <head>
+    <title>Actions page | Seller</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="/template/libs/materialize.min.css">
+    <link rel="stylesheet" href="/template/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="/template/libs/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/template/libs/jquery-ui.min.css">
+    <link rel="stylesheet" href="/template/libs/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="/template/libs/jquery-ui.theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,500,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+    <script src="/template/libs/jquery-1.10.2.min.js"></script>
+    <script src="/template/libs/materialize-0.100.0.min.js"></script>
+    <script src="/template/script.js"></script>
+    <script src="/template/libs/bootstrap-3.3.7.js"></script>
+  </head>
+  <body>
+    <!-- start /components/header_1_6_0_1/-->
+    <link rel="stylesheet" href="/components/header_1_6_0_1/style.css">
+    <script src="/components/header_1_6_0_1/script.js"></script>
+    <div id="sellerHeader_1">
+      <header class="bj-page-header i-load">
+        <section class="bj-page-header__top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-9 col-sm-6 col-xs-6 bj-logo-space"><span class="bj-logo"><img width="143" alt="" src="/template/images/headers/header_1_6_0_1/logo.png" height="40" title=""></span><span class="bj-page-header__search hidden-xs">
+                  <form action="/catalog/"><span style=" background-image: url( '/template/images/headers/header_1_6_0_1/search.svg' );" class="bj-page-header__search-icon"></span>
+                    <input id="title-search-input" type="search" name="q" size="23" maxlength="50" autocomplete="off" value="" placeholder="Я ищу..." class="bj-page-header__search__input form-control">
+                    <input name="s" type="hidden" value="">
+                  </form></span>
+                <div class="bj-top-nav hidden-sm hidden-xs"><a href="/catalog/" data-category="cat_1" class="bj-page-header__menu-link">Каталог</a><a href="/catalog/" data-category="cat_2" class="bj-page-header__menu-link">Образцы</a><a href="/about/">Absolutex</a></div><a id="nav-button" href="#" class="bj-nav-button hidden-sm hidden-xs"><span style="background-image: url( '/template/images/headers/header_1_6_0_1/menu.svg' );" class="bj-menu-icon"></span></a>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-6"><a id="nav-button-xs" href="#" data-activates="sideNavPanel" class="bj-nav-button visible-sm-inline-block visible-xs-inline-block"><span style="background-image: url( '/template/images/headers/header_1_6_0_1/menu.svg' );" class="bj-menu-icon"></span></a>
+                <div id="personal_menu" class="bj-personal hidden-xs">
+                  <div class="bj-personal-icon"></div>
+                </div><span id="sale-basket-basket-line-container"><a id="bx_cat_block" href="/personal/cart/" class="bj-cart-icon"><span style=" background-image: url( '/template/images/headers/header_1_6_0_1/basket.svg' );" class="b-shopping-cart"></span><span id="bx_cat_num" class="bj-cart-icon__num">0</span></a></span><span class="bj-search-icon hidden-xs"><span style=" background-image: url( '/template/images/headers/header_1_6_0_1/search.svg' );"></span></span><a href="#" data-toggle="modal" data-target="#myModal" class="bj-earphone-icon"><span style="background-image: url( '/template/images/headers/header_1_6_0_1/phone.svg' );"></span></a>
+                <div class="bj-page-header__search-close"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bj-page-header__sub">
+          <div class="container-fluid">
+            <div class="bj-page-header__sub-wrapper"><a href="">Поиск</a><a href="">О магазине</a><a href="">Новости</a><a href="">Контакты</a><a href="">Как купить</a><a href="">Оплата</a><a href="">Доставка</a><a href="">Гарантии</a>
+            </div>
+          </div>
+        </section>
+        <section class="bj-page-header__dropdown">
+          <div class="i-relative">
+            <article>
+              <div class="container-fluid">
+                <div class="bj-page-header__dropdown-hr"></div>
+                <div class="row">
+                  <div id="cat_1" class="col-md-9 col-sm-12">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <h3><a href="/catalog/muzhchinam/">Мужчинам</a></h3>
+                        <menu>
+                          <li><a href="/catalog/kurtki/">Куртки</a></li>
+                          <li><a href="/catalog/shoes/">Обувь</a></li>
+                          <li><a href="/catalog/bryuki/">Брюки</a></li>
+                          <li><a href="/catalog/rubashki-muzh/">Рубашки</a></li>
+                        </menu>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <h3><a href="/catalog/zhenshchinam/">Женщинам</a></h3>
+                        <menu>
+                          <li><a href="/catalog/zhenskoe_belje/">Белье</a></li>
+                          <li><a href="/catalog/w-bryuki/">Брюки</a></li>
+                          <li><a href="/catalog/dzhinsy/">Деним</a></li>
+                          <li><a href="/catalog/zhenskaya_obuv/">Обувь</a></li>
+                          <li><a href="/catalog/palto/">Пальто</a></li>
+                          <li><a href="/catalog/platya_women/">Платья</a></li>
+                          <li><a href="/catalog/accessories/">Аксессуары</a></li>
+                        </menu>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <h3><a href="/catalog/devochkam/">Девочкам</a></h3>
+                        <menu>
+                          <li><a href="/catalog/platya/">Платья</a></li>
+                          <li><a href="/catalog/futbolki-devochkam/">Футболки</a></li>
+                          <li><a href="/catalog/shorty/">Шорты</a></li>
+                        </menu>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <h3><a href="/catalog/malchikam/">Мальчикам</a></h3>
+                        <menu>
+                          <li><a href="/catalog/kurtki_malchikam/">Куртки</a></li>
+                          <li><a href="/catalog/svitery/">Свитеры</a></li>
+                          <li><a href="/catalog/futbolki/">Футболки</a></li>
+                        </menu>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="cat_2" class="col-md-9 col-sm-12">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <h3><a href="/catalog/muzhchinam/">Мужчинам 2</a></h3>
+                        <menu>
+                          <li><a href="/catalog/kurtki/">Куртки</a></li>
+                          <li><a href="/catalog/shoes/">Обувь</a></li>
+                          <li><a href="/catalog/bryuki/">Брюки</a></li>
+                          <li><a href="/catalog/rubashki-muzh/">Рубашки</a></li>
+                        </menu>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <h3><a href="/catalog/zhenshchinam/">Женщинам 2</a></h3>
+                        <menu>
+                          <li><a href="/catalog/zhenskoe_belje/">Белье</a></li>
+                          <li><a href="/catalog/w-bryuki/">Брюки</a></li>
+                          <li><a href="/catalog/dzhinsy/">Деним</a></li>
+                          <li><a href="/catalog/zhenskaya_obuv/">Обувь</a></li>
+                          <li><a href="/catalog/palto/">Пальто</a></li>
+                          <li><a href="/catalog/platya_women/">Платья</a></li>
+                          <li><a href="/catalog/accessories/">Аксессуары</a></li>
+                        </menu>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <h3><a href="/catalog/devochkam/">Девочкам 2</a></h3>
+                        <menu>
+                          <li><a href="/catalog/platya/">Платья</a></li>
+                          <li><a href="/catalog/futbolki-devochkam/">Футболки</a></li>
+                          <li><a href="/catalog/shorty/">Шорты</a></li>
+                        </menu>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <h3><a href="/catalog/malchikam/">Мальчикам</a></h3>
+                        <menu>
+                          <li><a href="/catalog/kurtki_malchikam/">Куртки</a></li>
+                          <li><a href="/catalog/svitery/">Свитеры</a></li>
+                          <li><a href="/catalog/futbolki/">Футболки</a></li>
+                        </menu>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-12">
+                    <div class="bj-page-header__dropdown-b hidden-sm hidden-xs"><a href=""><img src="/template/images/banner.jpg"></a></div>
+                  </div>
+                </div>
+                <div><a href="/brand/"><strong>Бренды </strong> (Все 8)</a></div>            
+                <hr>            
+                <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="media">
+                      <div class="media-left media-middle"><a href="/brand/alexander-mcqueen/"><img alt="" src="/template/images/brand1.png" class="media-object"></a></div>                        
+                      <div class="media-body media-middle"><a href="/brand/alexander-mcqueen/">Alexander McQueen</a></div>
+                    </div>
+                  </div>                
+                  <hr class="visible-xs-block clearfix">                
+                  <div class="col-md-3 col-sm-6">
+                    <div class="media">
+                      <div class="media-left media-middle"><a href="/brand/benetton/"><img alt="" src="/template/images/brand2.png" class="media-object"></a></div>                        
+                      <div class="media-body media-middle"><a href="/brand/benetton/">Benetton</a></div>
+                    </div>
+                  </div>                
+                  <div class="visible-xs-block visible-sm-block clearfix"></div>                
+                  <hr class="visible-xs-block visible-sm-block">                
+                  <div class="col-md-3 col-sm-6">
+                    <div class="media">
+                      <div class="media-left media-middle"><a href="/brand/adidas/"><img alt="" src="/template/images/brand3.png" class="media-object"></a></div>                        
+                      <div class="media-body media-middle"><a href="/brand/adidas/">Adidas</a></div>
+                    </div>
+                  </div>                
+                  <hr class="visible-xs-block clearfix">                
+                  <div class="col-md-3 col-sm-6">
+                    <div class="media">
+                      <div class="media-left media-middle"><a href="/brand/burberry/"><img alt="" src="/template/images/brand4.png" class="media-object"></a></div>                        
+                      <div class="media-body media-middle"><a href="/brand/burberry/">Burberry</a></div>
+                    </div>
+                  </div>
+                </div>            
+                <hr>            
+                <div class="row">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="media">
+                      <div class="media-left media-middle"><a href="/brand/chanel/"><img alt="" src="/template/images/brand5.png" class="media-object"></a></div>                        
+                      <div class="media-body media-middle"><a href="/brand/chanel/">Chanel</a></div>
+                    </div>
+                  </div>                
+                  <hr class="visible-xs-block clearfix">                
+                  <div class="col-md-3 col-sm-6">
+                    <div class="media">
+                      <div class="media-left media-middle"><a href="/brand/christian-louboutin/"><img alt="" src="/template/images/brand6.png" class="media-object"></a></div>                        
+                      <div class="media-body media-middle"><a href="/brand/christian-louboutin/">Christian Louboutin</a></div>
+                    </div>
+                  </div>                
+                  <div class="visible-xs-block visible-sm-block clearfix"></div>                
+                  <hr class="visible-xs-block visible-sm-block">                
+                  <div class="col-md-3 col-sm-6">
+                    <div class="media">
+                      <div class="media-left media-middle"><a href="/brand/diesel/"><img alt="" src="/template/images/brand7.png" class="media-object"></a></div>                        
+                      <div class="media-body media-middle"><a href="/brand/diesel/">Diesel</a></div>
+                    </div>
+                  </div>                
+                  <hr class="visible-xs-block clearfix">                
+                  <div class="col-md-3 col-sm-6">
+                    <div class="media">
+                      <div class="media-left media-middle"><a href="/brand/dior/"><img alt="" src="/template/images/brand8.png" class="media-object"></a></div>                        
+                      <div class="media-body media-middle"><a href="/brand/dior/">Dior</a></div>
+                    </div>
+                  </div>
+                </div>            
+                <hr>            
+                <hr class="i-size-L">            
+                <button class="up"></button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="cartDropdown" data-url="/template/cart-droprown-ajax.html" data-method="GET" class="bj-page-header__cart-dropdown">
+          <div class="i-relative">
+            <article>
+              <div class="container-fluid"></div>
+              <div class="progress">
+                <div class="indeterminate"></div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="userDropdown" class="bj-page-header__user-dropdown">
+          <div class="i-relative">
+            <article>
+              <div class="container-fluid"><a href="">Войти</a><a href="">Регистрация</a>
+                <hr><a href="">tatiana</a><a href="">Мои заказы</a><a href="">Выйти</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" class="modal fade">
+          <div role="document" class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-label="Close" class="close"></button>                  
+                <h2 id="myModalLabel" class="modal-title text-center">Наш телефон</h2>
+              </div>                
+              <div class="modal-body text-center">
+                <div class="bj-text-x-large">8 (495) 212 85 06</div>                  
+                <div class="small">&Pcy;&ncy;-&Vcy;&scy; 10-19</div>
+              </div>                
+              <div style="display:none" class="modal-footer text-center">
+                <button type="button" class="btn btn-default">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="bj-page-header__submenu">
+          <div class="container-fluid">
+            <script src="/template/libs/swiper.min.js"></script>
+            <link rel="stylesheet" href="/template/libs/swiper.min.css">
+            <div class="swiper-container"> 
+              <div class="swiper-wrapper"> <a href="" class="swiper-slide">Верхняя одежда</a><a href="" class="swiper-slide">Пальто</a><a href="" class="swiper-slide">Костюмы</a><a href="" class="swiper-slide">Пиджаки, жилеты</a><a href="" class="swiper-slide">Куртки</a><a href="" class="swiper-slide">Брюки</a><a href="" class="swiper-slide">Сорочки, рубашки, манишки</a></div>
+              <div class="swiper-shadow"></div>
+            </div>
+            <div class="bj-page-header__submenu__line"></div>
+          </div>
+        </section>
+      </header>
+    </div>
+    <ul id="sideNavPanel" class="side-nav">
+      <li class="logo"><span class="bj-logo"><img width="143" alt="" src="" height="40" title=""></span></li>
+      <li class="no-padding">
+        <div class="media">
+          <div class="media-body">
+            <ul>
+              <li><a href="/personal/">admin admin</a></li>
+              <li><a href="/?logout=yes">Выйти</a></li>
+            </ul>
+          </div>
+          <div class="media-right"><a href="/personal/"><img src="" width="64" height="48"></a></div>
+        </div>
+      </li>
+      <li class="no-padding">
+        <ul>
+          <li><a href="/personal/cart/">Корзина <span class="badge">3</span></a></li>
+          <li><a href="/personal/index.php?SECTION=orders">Мои заказы</a></li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul>
+          <li><a href="/search/">Поиск</a></li>
+          <li><a href="/catalog/" class="bj-page-header__menu-link">Каталог</a></li>
+          <li><a href="/campaign/">Акции</a></li>
+          <li><a href="/journal/">Журнал</a></li>
+          <li><a href="/lookbook/">LookBook</a></li>
+          <li><a href="/about/">О магазине</a></li>
+          <li><a href="/news/">Новости</a></li>
+          <li><a href="/about/contacts/">Контакты</a></li>
+          <li><a href="/about/vacancies/">Вакансии</a></li>
+          <li><a href="/about/howto/">Как купить</a></li>
+          <li><a href="/payment/">Оплата</a></li>
+          <li><a href="/about/delivery/">Доставка</a></li>
+          <li><a href="/about/guaranty/">Гарантии</a></li>
+        </ul>
+      </li>
+    </ul><a id="seller-tuner-icon" data-activates="seller-tuner" class="hidden-xs"><span style="background-image: url( '/template/images/headers/header_1_6_0_1/tuner.svg' );"></span></a>
+    <!-- end /components/header_1_6_0_1/-->
+    <div class="container-fluid">
+      <ol class="breadcrumb hidden-xs">
+        <li><a href="/" title="Главная страница">Главная страница</a></li>
+        <li><span>Акции</span></li>
+      </ol>
+      <hr class="visible-xs-block">
+      <!-- start /components/actions/-->
+      <link rel="stylesheet" href="/components/actions/style.css">
+      <script src="/components/actions/script.js"></script>
+      <style>
+        .b-actions-item { background-color: #f2f2f2; height: 400px; }
+        .b-actions-item__img, .b-actions-item__title, .b-actions-item__brand, .b-actions-item__price, .b-actions-item__amount { opacity: 0; }
+      </style>
+      <div itemscope itemtype="http://schema.org/SomeProducts" class="b-actions">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1>Верблюжье пальто</h1>
+          </div>
+          <div class="col-sm-4">
+            <div class="b-catalog-tags"><a href="">Пальто</a> <a href="">Женщинам</a> <a href="">Зима</a></div>
+          </div>
+        </div>
+        <div class="b-inform-blocks">
+          <div href="" style="background-image: url( '/upload/inform-blocks/banner-12.png' );" class="b-inform-blocks__item i-size-12"></div>
+        </div>
+        <hr>
+        <p>В этом разделе вы найдете все необходимое для мужского гардероба для любого сезона. Большой выбор одежды разных стилей и ценовых категорий от лучших мировых брендов.</p>
+        <hr>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="bj-sorting">
+              <div class="text-muted">Сортировка:</div>
+              <div class="dropdown"><a id="dLabel" href="#" role="button" data-toggle="dropdown" data-target="#" aria-expanded="false">Недорогие вещи для зимы<span class="caret"></span></a>
+                <ul role="menu" aria-labelledby="dLabel" class="dropdown-menu">
+                  <li><a href="/catalog/shoes/?sort=cheap#sort">Недорогие</a></li>
+                  <li><a href="/catalog/shoes/?sort=new#sort">Новые</a></li>
+                  <li><a href="/catalog/shoes/?sort=popular#sort">Популярные</a></li>
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <hr class="visible-xs">
+          <div class="col-sm-6 text-right hidden-xs">
+            <div data-pagination-num="2" class="b-pagination">
+              <div class="b-pagination-block"><a href="/catalog/muzhchinam/?PAGEN_2=1">1</a><a href="/catalog/muzhchinam/?PAGEN_2=2">2</a><span>...</span><span class="i-active">4</span><a href="/catalog/muzhchinam/?PAGEN_2=5">5</a><a href="/catalog/muzhchinam/?PAGEN_2=6">6</a><a class="i-backward">Предыдущая</a><a class="i-forward">Следующая</a></div>
+            </div>
+          </div>
+        </div>
+        <hr class="i-line i-size-L">
+        <div class="row">
+          <div class="col-sm-3">
+            <div id="bx-">
+              <div class="b-actions-item">
+                <div class="b-actions-item__img"><a href=""><span data-original="/upload/actions/1.jpg"></span><span data-original="/upload/actions/1-1.jpg"></span></a><span style="background-color: #ff3333;" class="b-actions-item__label">5% в декабре</span>
+                  <div class="b-actions-item__props-icons">
+                    <div style="background-color: #FF7146;" class="b-prop">Хит</div>
+                    <div style="background-color: #68B496;" class="b-prop">Новинка</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="b-actions-item__title"><a href="">4047 SPW M CORN DK NAVY/Куртка мужская (пуховик)</a></div>
+                <div class="b-actions-item__brand"><span>BAZIONI</span><span>Сорт. 123</span><span>23 шт</span></div>
+                <div class="b-actions-item__price">
+                  <div class="row">
+                    <div class="col-xs-4">8 360 руб.</div>
+                    <div class="col-xs-4">8 360 руб.</div>
+                    <div class="col-xs-4">8 360 руб.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="visible-xs-block i-size-XL">
+          <div class="col-sm-3">
+            <div id="bx-">
+              <div class="b-actions-item">
+                <div class="b-actions-item__img"><a href=""><span data-original="/upload/actions/1.jpg"></span><span data-original="/upload/actions/1-1.jpg"></span></a><span style="background-color: #ff3333;" class="b-actions-item__label">5% в декабре</span>
+                  <div class="b-actions-item__props-icons">
+                    <div style="background-color: #ca3538;" class="b-prop">35%</div>
+                    <div style="background-color: #77388D;" class="b-prop">Рекомендуем</div>
+                    <div style="background-color: #68B496;" class="b-prop">Новинка</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="b-actions-item__title"><a href="">4047 SPW M CORN DK NAVY/Куртка мужская (пуховик)</a></div>
+                <div class="b-actions-item__brand"><span>BAZIONI</span><span>Сорт. 123</span><span>23 шт</span></div>
+                <div class="b-actions-item__price">
+                  <div class="row">
+                    <div class="col-xs-4 i-sale">8 360 руб.
+                      <s>10 360 руб.</s>
+                    </div>
+                    <div class="col-xs-4 i-sale">8 360 руб.
+                      <s>10 360 руб.</s>
+                    </div>
+                    <div class="col-xs-4 i-sale">8 360 руб.
+                      <s>10 360 руб.</s>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="visible-xs-block i-size-XL">
+          <div class="col-sm-3">
+            <div id="bx-">
+              <div class="b-actions-item">
+                <div class="b-actions-item__img"><a href=""><span data-original="/upload/actions/1.jpg"></span><span data-original="/upload/actions/1-1.jpg"></span></a><span style="background-color: #ff3333;" class="b-actions-item__label">5% в декабре</span>
+                  <div class="b-actions-item__props-icons">
+                    <div style="background-color: #FF7146;" class="b-prop">Хит</div>
+                    <div style="background-color: #68B496;" class="b-prop">Новинка</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="b-actions-item__title"><a href="">4047 SPW M CORN DK NAVY/Куртка мужская (пуховик)</a></div>
+                <hr class="i-size-S">
+                <div class="b-actions-item__brand">BAZIONI</div>
+                <div class="b-actions-item__price">от 5 190 руб.</div>
+                <div class="b-actions-item__amount">21 шт.</div>
+              </div>
+            </div>
+          </div>
+          <hr class="visible-xs-block i-size-XL">
+          <div class="col-sm-3">
+            <div id="bx-">
+              <div class="b-actions-item">
+                <div class="b-actions-item__img"><a href=""><span data-original="/upload/actions/1.jpg"></span><span data-original="/upload/actions/1-1.jpg"></span></a><span style="background-color: #ff3333;" class="b-actions-item__label">5% в декабре</span>
+                  <div class="b-actions-item__props-icons">
+                    <div style="background-color: #FF7146;" class="b-prop">Хит</div>
+                    <div style="background-color: #68B496;" class="b-prop">Новинка</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="b-actions-item__title"><a href="">4047 SPW M CORN DK NAVY/Куртка мужская (пуховик)</a></div>
+                <hr class="i-size-S">
+                <div class="b-actions-item__brand">BAZIONI</div>
+                <div class="b-actions-item__price">от 5 190 руб.</div>
+                <div class="b-actions-item__amount">21 шт.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="i-size-L">
+        <div class="row">
+          <div class="col-sm-3">
+            <div id="bx-">
+              <div class="b-actions-item">
+                <div class="b-actions-item__img"><a href=""><span data-original="/upload/actions/1.jpg"></span><span data-original="/upload/actions/1-1.jpg"></span></a><span style="background-color: #ff3333;" class="b-actions-item__label">5% в декабре</span>
+                  <div class="b-actions-item__props-icons">
+                    <div style="background-color: #FF7146;" class="b-prop">Хит</div>
+                    <div style="background-color: #68B496;" class="b-prop">Новинка</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="b-actions-item__title"><a href="">4047 SPW M CORN DK NAVY/Куртка мужская (пуховик)</a></div>
+                <hr class="i-size-S">
+                <div class="b-actions-item__brand">BAZIONI</div>
+                <div class="b-actions-item__price">от 5 190 руб.</div>
+                <div class="b-actions-item__amount">21 шт.</div>
+              </div>
+            </div>
+          </div>
+          <hr class="visible-xs-block i-size-XL">
+          <div class="col-sm-3">
+            <div id="bx-">
+              <div class="b-actions-item">
+                <div class="b-actions-item__img"><a href=""><span data-original="/upload/actions/1.jpg"></span><span data-original="/upload/actions/1-1.jpg"></span></a><span style="background-color: #ff3333;" class="b-actions-item__label">5% в декабре</span>
+                  <div class="b-actions-item__props-icons">
+                    <div style="background-color: #FF7146;" class="b-prop">Хит</div>
+                    <div style="background-color: #68B496;" class="b-prop">Новинка</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="b-actions-item__title"><a href="">4047 SPW M CORN DK NAVY/Куртка мужская (пуховик)</a></div>
+                <hr class="i-size-S">
+                <div class="b-actions-item__brand">BAZIONI</div>
+                <div class="b-actions-item__price">от 5 190 руб.</div>
+                <div class="b-actions-item__amount">21 шт.</div>
+              </div>
+            </div>
+          </div>
+          <hr class="visible-xs-block i-size-XL">
+          <div class="col-sm-3">
+            <div id="bx-">
+              <div class="b-actions-item">
+                <div class="b-actions-item__img"><a href=""><span data-original="/upload/actions/1.jpg"></span><span data-original="/upload/actions/1-1.jpg"></span></a><span style="background-color: #ff3333;" class="b-actions-item__label">5% в декабре</span>
+                  <div class="b-actions-item__props-icons">
+                    <div style="background-color: #FF7146;" class="b-prop">Хит</div>
+                    <div style="background-color: #68B496;" class="b-prop">Новинка</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="b-actions-item__title"><a href="">4047 SPW M CORN DK NAVY/Куртка мужская (пуховик)</a></div>
+                <hr class="i-size-S">
+                <div class="b-actions-item__brand">BAZIONI</div>
+                <div class="b-actions-item__price">от 5 190 руб.</div>
+                <div class="b-actions-item__amount">21 шт.</div>
+              </div>
+            </div>
+          </div>
+          <hr class="visible-xs-block i-size-XL">
+          <div class="col-sm-3">
+            <div id="bx-">
+              <div class="b-actions-item">
+                <div class="b-actions-item__img"><a href=""><span data-original="/upload/actions/1.jpg"></span><span data-original="/upload/actions/1-1.jpg"></span></a><span style="background-color: #ff3333;" class="b-actions-item__label">5% в декабре</span>
+                  <div class="b-actions-item__props-icons">
+                    <div style="background-color: #FF7146;" class="b-prop">Хит</div>
+                    <div style="background-color: #68B496;" class="b-prop">Новинка</div>
+                  </div>
+                </div>
+                <hr>
+                <div class="b-actions-item__title"><a href="">4047 SPW M CORN DK NAVY/Куртка мужская (пуховик)</a></div>
+                <hr class="i-size-S">
+                <div class="b-actions-item__brand">BAZIONI</div>
+                <div class="b-actions-item__price">от 5 190 руб.</div>
+                <div class="b-actions-item__amount">21 шт.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="i-size-XL">
+        <hr class="i-size-XL">
+      </div>
+      <!-- end /components/actions/-->
+    </div>
+    <div id="b-float-phone">
+      <div class="b-float-phone__bg"></div><span class="b-float-phone__content"><span class="bj-footer-earphone-icon"></span><span class="b-float-phone__text">+7 499 35 007 98</span></span>
+    </div>
+    <footer class="b-footer">
+      <div class="b-container">
+        <div class="b-row">
+          <div class="b-col-sm-4"></div>
+          <div class="b-col-sm-4"></div>
+          <div class="b-col-sm-4"></div>
+        </div>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="/template/template_styles.css">
+    <link rel="stylesheet" href="/template/colors.css">
+    <div id="circlePreloader">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

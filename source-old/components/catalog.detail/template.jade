@@ -1,0 +1,278 @@
+﻿// start /components/catalog.detail/
+
+link( rel="stylesheet", href="/components/catalog.detail/style.css" )
+script( src="/components/catalog.detail/script.js" )
+
+.row
+  .col-sm-8
+    h1.i-small Мужское зимнее шерстяное пальто VENTUNO BLACK черно-серого цвета
+  .col-sm-4.text-right
+    a.back-to-catalogue( href="../" ) Вернуться в каталог
+    
+hr
+.text-center
+  a.back-to-catalogue( href="../" ) Вернуться в каталог
+hr
+  
+.row
+
+  .col-sm-6
+  
+    include ../../modules/gallery/fotorama
+    include ../../modules/gallery/include
+  
+  .col-sm-6
+  
+    - var id = 10
+  
+    //Минимальная цена указывается в самом диве. Показывается если ничего не выбрано
+    .b-catalog-detail__info.i-1( data-price-1="1 300 руб." data-price-2="1 300 руб." data-price-3="14 257 руб." data-price-4="14 257 руб." )
+    
+      .b-catalog-detail__prices
+      
+        .row.b-catalog-detail__basic-prices
+        
+          .col-xs-6
+            input#catalogDetailPricesInput1( type="radio" name="price" value="1" )
+            label( for="catalogDetailPricesInput1" )
+              h5 Рассрочка
+              .b-catalog-detail__price( data-price="1" ) 14 257 руб.
+              
+          .col-xs-6
+            input#catalogDetailPricesInput2( type="radio" name="price" value="2" )
+            label( for="catalogDetailPricesInput2" )
+              h5 Выкуп
+              .b-catalog-detail__price( data-price="2" ) 14 257 руб.
+      
+        .row
+        
+          .col-xs-6
+            input#catalogDetailPricesInput3( type="radio" name="price" value="3" )
+            label( for="catalogDetailPricesInput3" )
+              h5 Частичная рассрочка
+              .b-catalog-detail__price( data-price="3" ) 14 257 руб.
+              
+          .col-xs-6
+            input#catalogDetailPricesInput4( type="radio" name="price" value="4" )
+            label( for="catalogDetailPricesInput4" )
+              h5 Частичный выкуп
+              .b-catalog-detail__price( data-price="4" ) 14 257 руб.
+          
+      hr
+      
+      .b-catalog-detail__sizes
+        
+        - var i = 0
+        - var j = 0
+        - var k = 44
+        - var l = 164
+        - var price = 1300
+        - var discount = 100
+          
+          while j < 6
+            - j++
+            - i = 0
+            - k = 44
+        
+            .b-catalog-detail__sizes-row
+            
+              while i < 10
+                - i++
+                - price += 100
+                - discount += 10
+                
+                .b-catalog-detail__sizes-item( data-price="#{price} руб." data-discount="#{discount} руб." data-oldprice="#{price+discount} руб." data-id="#{id++}" )
+                  div=k
+                    - k = k + 2
+                  div=l
+                  
+            - l = l + 6
+            
+      hr
+      
+      .row
+        .col-sm-6
+          .b-catalog-detail__order Вы выбрали
+            | 
+            span.b-catalog-detail__order-num 9 размеров
+          
+        .col-sm-6
+          a.btn.btn-default.btn-size-L.bj-cart-button.btn-100.i-disabled( href="" data-ajax-url="/components/catalog.detail/response.json" data-ajax-method="GET" data-toggle="modal" data-target="#cartModal" ) Добавить в корзину
+          
+          #cartModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='cartModalLabel')
+            .modal-dialog(role='document')
+              .modal-content
+                .modal-header
+                  button.close( type='button', data-dismiss='modal', aria-label='Close' )
+                  h4#cartModalLabel.modal-title Вы выбрали
+                    | 
+                    span#cartModalLabelNum 9 размеров
+                  
+                .modal-footer.popup-window-buttons
+                  span.bx_item_detail.bx_blue
+                    span.bx_medium.bx_bt_button( style='margin-right: 10px;', data-dismiss='modal') Продолжить выбор
+                  span.bx_item_detail.bx_blue
+                    a.bx_medium.bx_bt_button( href="/cart/" ) Перейти в корзину
+    
+    .item-information
+    
+      .b-catalog-brand
+        span Бренд: Bazioni
+      
+      .b-catalog-brand
+        img( src="/upload/brand-logo.jpg" width="130" height="40" alt="" )
+        span Бренд: Bazioni
+                            
+    hr
+  
+    .b-catalog-detail__info.i-2( data-price="1 300 руб." data-discount="1 300 руб." data-oldprice="14 257 руб." )
+      
+      .row
+      
+        .col-xs-3.b-catalog-detail__old-price
+          h5 Старая цена
+          s 14 257 руб.
+            
+        .col-xs-3.b-catalog-detail__discount
+          h5 Выгода
+          span 1 300 руб.
+            
+        .col-xs-6.text-right
+          .b-catalog-detail__price 1 300 руб.
+          
+      hr.i-size-M.i-line
+      
+      .b-catalog-detail__sizes
+        
+        - var i = 0
+        - var j = 0
+        - var k = 37
+        - var l = 170
+        - var price = 5000
+        - var discount = 500
+          
+          while j < 4
+            - j++
+            - i = 0
+            - k = 37
+        
+            .b-catalog-detail__sizes-row
+            
+              while i < 12
+                - i++
+                - price += 100
+                - discount += 10
+                
+                .b-catalog-detail__sizes-item( data-price="#{price} руб." data-discount="#{discount} руб." data-oldprice="#{price+discount} руб." data-id="#{id++}" )
+                  div=k
+                    - k = k + 2
+                  div #{l}-#{l+6}
+                  
+            - l = l + 6
+            
+      hr
+      
+      .row
+        .col-sm-6
+          .b-catalog-detail__order Вы выбрали
+            | 
+            span.b-catalog-detail__order-num 9 размеров
+          
+        .col-sm-6
+          a.btn.btn-default.btn-size-L.bj-cart-button.btn-100.i-disabled( href="" data-ajax-url="/components/catalog.detail/response.json" data-ajax-method="GET" data-toggle="modal" data-target="#cartModal" ) Добавить в корзину
+            
+    hr
+  
+    .b-catalog-detail__info.i-3( data-price="1 300 руб." data-discount="1 300 руб." data-oldprice="14 257 руб." )
+      
+      .row
+      
+        .col-xs-3.b-catalog-detail__old-price
+          h5 Старая цена
+          s 14 257 руб.
+            
+        .col-xs-3.b-catalog-detail__discount
+          h5 Выгода
+          span 1 300 руб.
+            
+        .col-xs-6.text-right
+          .b-catalog-detail__price.i-sale 1 300 руб.
+          
+      hr.i-size-M.i-line
+      
+      .b-catalog-detail__sizes
+      
+        .b-catalog-detail__sizes-row
+        
+          .b-catalog-detail__sizes-item( data-price="1000 руб." data-discount="500 руб." data-oldprice="1500 руб." data-id="#{id++}" ) XXS
+          .b-catalog-detail__sizes-item( data-price="1000 руб." data-discount="500 руб." data-oldprice="1500 руб." data-id="#{id++}" ) XS
+          .b-catalog-detail__sizes-item( data-price="2000 руб." data-discount="600 руб." data-oldprice="2600 руб." data-id="#{id++}" ) S
+          .b-catalog-detail__sizes-item( data-price="3000 руб." data-discount="700 руб." data-oldprice="3700 руб." data-id="#{id++}" ) M
+          .b-catalog-detail__sizes-item( data-price="4000 руб." data-discount="800 руб." data-oldprice="4800 руб." data-id="#{id++}" ) L
+          .b-catalog-detail__sizes-item( data-price="5000 руб." data-discount="900 руб." data-oldprice="5900 руб." data-id="#{id++}" ) XL
+          .b-catalog-detail__sizes-item( data-price="6000 руб." data-discount="1000 руб." data-oldprice="7000 руб." data-id="#{id++}" ) XXL
+          .b-catalog-detail__sizes-item( data-price="6000 руб." data-discount="1000 руб." data-oldprice="7000 руб." data-id="#{id++}" ) XXXL
+            
+      hr
+      
+      .row
+        .col-sm-6
+          .b-catalog-detail__order Вы выбрали
+            | 
+            span.b-catalog-detail__order-num 9 размеров
+          
+        .col-sm-6
+          a.btn.btn-default.btn-size-L.bj-cart-button.btn-100.i-disabled( href="" data-ajax-url="/components/catalog.detail/response.json" data-ajax-method="GET" data-toggle="modal" data-target="#cartModal" ) Добавить в корзину
+          
+    hr
+          
+    .item-details-accordeon
+    
+      .collapsing-block
+        .h3(style='padding-top: 15px; padding-bottom: 15px; margin:0px; cursor:pointer;') Описание
+        .collapsing-content
+          .inner
+            p Мужской полуприлегающий костюм PIZANO синего цвета Classic fit ABSOLUTEX
+      .collapsing-block.closed
+        .h3(style='padding-top: 15px; padding-bottom: 15px; margin:0px; cursor:pointer;') Детали
+        .collapsing-content
+          .inner
+            | Артикул: 1321* M PIZANO
+            br
+            | 			Состав: 30%шерсть, 50%вискоза, 20% полиэстер
+            br
+            | 									Сезон: Мультисезон
+            br
+            | 			Страна производитель: РОССИЯ
+            br
+      .collapsing-block.closed
+        .h3(style='padding-top: 15px; padding-bottom: 15px; margin:0px; cursor:pointer;') Силуэт
+        .collapsing-content
+          .inner
+            hr
+            .row
+              .col-sm-4
+                img(src='/upload/iblock/a38/a38787fb79bf3a052425d3b79813f860.jpg', alt='Силуэт', width='144')
+              .col-sm-6
+                | Полуприлегающий силуэт (Classic fit)
+                br
+                |  Это силуэт вещей, которые не очень плотно сидят на фигуре, скрывая некоторые недостатки, но в то же время такой силуэт нельзя назвать просторным. Такой силуэт подходит для большинства типов фигур.
+                br
+      .collapsing-block.closed
+        .h3(style='padding-top: 15px; padding-bottom: 15px; margin:0px; cursor:pointer;') Доставка и возврат
+        .collapsing-content
+          .inner
+            p
+              | Ознакомьтесь, пожалуйста, 
+              a(href='/about/delivery/') с условиями доставки.
+            p
+              | Если вещь по каким-то причинам не подошла Вам, мы без проблем обменяем ее на нужный размер или вернем деньги в установленный законом срок. Обмен и возврат возможны, только если вещь не была в употреблении, сохранены товарный вид (а также ярлыки, этикетки, упаковка) и чек. 
+              a(href='/about/delivery/vozvrat.php') Подробнее об обмене и возврате.
+              
+      hr
+
+      .item-feedback Если у вас есть вопросы, пожалуйста, позвоните нашим операторам! <br> <span>8 (495) 281-52-52</span>
+              
+hr
+
+// end /components/catalog.detail/

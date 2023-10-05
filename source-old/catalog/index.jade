@@ -1,0 +1,28 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title Catalog | absolutex
+
+block content
+   
+  .bj-page-content.container-fluid
+  
+    ol.breadcrumb
+      li
+        a(href='/', title='Главная страница') Главная страница
+      li
+        a(href='/catalog/', title='Каталог') Каталог
+      li
+        a(href='/catalog/muzhchinam/', title='Мужчинам') Мужчинам
+      li
+        a(href='/catalog/verkhnyaya_odezhda/', title='Верхняя одежда') Верхняя одежда
+      li
+        a(href='/catalog/palto/', title='Пальто') Пальто
+      li
+        a(href='/catalog/chernoe_muzhskoe_palto/', title='Черное мужское пальто') Черное мужское пальто
+      li
+        span Мужское зимнее шерстяное пальто VENTUNO BLACK черно-серого цвета
+        
+    include ../components/catalog/template
+    
+    #viewCounter( data-url="/template/counter.json?IBLOCK_ID=3&ELEMENT_ID=40647&SITE_ID=s1" )

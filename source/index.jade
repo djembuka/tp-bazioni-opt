@@ -1,0 +1,72 @@
+extends ./layouts/main.jade
+
+block title
+  title Main page | seller
+
+block content
+
+  .container-fluid
+    
+    hr.i-size-L
+    hr.i-size-L
+    hr.i-size-L
+    
+    h1 Seller
+
+    h2 PDF
+    ul
+      li
+        a( href="/pdf/agreement-postponement/" ) Договор поставки с отсрочкой платежа
+      li
+        a( href="/pdf/agreement-prepayment/" ) Договор поставки с предоплатой
+    
+    h2 Каталог
+    ul
+      li
+        a( href="/catalog/" ) Catalog
+      li
+        a( href="/catalog/detail/" ) Catalog detail
+        
+    h2 Другие страницы
+    ul
+      li
+        a( href="/alert/" ) Сообщение перед шапкой
+      li
+        a( href="/lookbook/" ) Lookbook
+      li
+        a( href="/personal/cart/" ) Моя корзина
+      li
+        a( href="/personal/cart-compact/" ) Моя корзина (compact version)
+      li
+        a( href="/instagram/" ) Instagram
+      li
+        a( href="/shops/" ) Магазины
+      li
+        a( href="/shops/shop-detail/" ) Магазин детально
+      li
+        a( href="/actions/" ) Акции
+      li
+        a( href="/personal/profile-list/" ) Профили ЮЛ
+      li
+        a( href="/personal/profile-form/" ) Редактирование профиля ЮЛ
+        
+    h2 Блоки
+    ul
+      li
+        a( href="/blocks/catalogue-tabs/" ) Вкладки с товарами (components/catalogue-tabs/)
+      li
+        a( href="/blocks/banners/" ) Баннеры на главной
+      li
+        a( href="/blocks/catalog-recommend/" ) С этим товаром рекомендуем (карусель товаров)
+        
+    h2 Формы
+    ul
+      li
+        a( href="/forms/auth/" ) Авторизация
+      li
+        a( href="/forms/reg/" ) Регистрация
+      li
+        a( href="/forms/letter/" ) Письмо руководству
+      li
+        a( href="/forms/letter/ajax/" ) Письмо руководству (ajax)
+        

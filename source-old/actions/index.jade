@@ -1,0 +1,16 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title Actions | Absolutex
+
+block content
+   
+  .container-fluid
+  
+    ol.breadcrumb
+      li
+        a(href='/', title='Главная страница') Главная страница
+      li
+        span Акции
+        
+    include ../components/actions/template

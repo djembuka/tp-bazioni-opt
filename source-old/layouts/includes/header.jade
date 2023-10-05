@@ -1,0 +1,248 @@
+﻿header.bj-page-header
+  section.bj-page-header__top
+    .container-fluid
+      .row
+        .col-md-10.col-sm-9.col-xs-12.bj-logo-space
+          a.bj-logo(href='/')
+          a(href='/')
+            img(width='143', alt='logoasobio.png', src='/upload/medialibrary/25f/25fe69fdf63b2c1b012714e8c22ff164.png', height='40', title='logoasobio.png')
+          // nclude virtual="/blocks/page/header/user.html"
+          button.bj-logo-space__icon.glyphicon.glyphicon-user.hidden-sm.hidden-xs(href='#', data-content='<a href="/auth/">Войти</a><a href="/auth/?register=yes">Зарегистрироваться</a>', data-original-title='', title='')
+          span#sale-basket-basket-line-container
+            a#bx_cart_block.bj-logo-space__icon.bj-cart-icon(href='/personal/cart/')
+              span.glyphicon.glyphicon-shopping-cart(data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Корзина')
+              span#bx_cart_num.bj-cart-icon__num 0
+          span#search.bj-page-header__search.hidden-sm.hidden-xs
+            span.glyphicon.glyphicon-search.hidden-sm.hidden-xs(href='', data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Поиск')
+            form(action='/catalog/')
+              input#title-search-input.bj-page-header__search__input.form-control(type='search', name='q', value='', size='23', maxlength='50', autocomplete='off')
+              input(name='s', type='hidden', value='')
+          a#nav-button.bj-nav-button(href='#', data-activates='sideNavPanel')
+            span.glyphicon.glyphicon-align-justify(data-toggle='tooltip', data-placement='bottom', title='', data-original-title='Меню')
+          nav.bj-top-nav.hidden-xs
+            a(href='/about/howto/') Как купить
+            a(href='/news') Новости
+            a(href='/about/') О магазине
+            a(href='/about/contacts/') Контакты
+        style.
+          @media (max-width: 767px) {
+          .bj-logo-space__icon.bj-cart-icon {
+          float: right;
+          margin: 0 43px 0 0;
+          }
+          }
+        .col-md-2.col-sm-3.bj-phone
+          span.bj-phone__num.hidden-xs
+            div
+              | +7 (495) 281-52-52
+            // <span class="bj-phone__time">c 8:00 до 23:00</span>
+          a.glyphicon.glyphicon-earphone.hidden-xs(href='#', data-toggle='modal', data-target='#myModal')
+          a.glyphicon.glyphicon-earphone.visible-xs-block(href='tel:<div>\
+          +7 (495) 281-52-52\
+          </div>\
+          ')
+          #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+            .modal-dialog(role='document')
+              .modal-content
+                .modal-header
+                  button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                  #myModalLabel.modal-title.text-center(style='font-size:13pt') Наш телефон
+                .modal-body.text-center
+                  .bj-text-x-large
+                    div
+                      | +7 (495) 281-52-52
+                  .small Пн-Вс 10-22
+                .modal-footer.text-center(style='display:none')
+                  button.btn.btn-default(type='button') Заказать звонок
+  section.bj-page-header__dropdown.b-asobio-subnav__dropdown.container-fluid(data-rel='426')
+    .i-relative
+      article
+        .row
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/verkhnyaya_odezhda/') Верхняя одежда
+            menu
+              li
+                a(href='/catalog/kurtki/') Куртки
+              li
+                a(href='/catalog/palto/') Пальто
+              li
+                a(href='/catalog/plashchi/') Плащи
+              li
+                a(href='/catalog/outlet/') OUTLET
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/kostyumy_i_pidzhaki/') Костюмы и пиджаки
+            menu
+              li
+                a(href='/catalog/kostyumy/') Костюмы
+              li
+                a(href='/catalog/pidzhaki/') Пиджаки
+              li
+                a(href='/catalog/zhilety/') Жилеты
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/rubashki_i_bryuki/') Рубашки и брюки
+            menu
+              li
+                a(href='/catalog/rubashki/') Рубашки
+              li
+                a(href='/catalog/bryuki/') Брюки
+              li
+                a(href='/catalog/dzhempery/') Джемперы
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/nizhnee_bele/') Нижнее белье
+            menu
+              li
+                a(href='/catalog/futbolki_i_vodolazki/') Футболки и водолазки
+              li
+                a(href='/catalog/trusy/') Трусы
+        button.up
+  section.bj-page-header__dropdown.b-asobio-subnav__dropdown.container-fluid(data-rel='462')
+    .i-relative
+      article
+        .row
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/muzhskie/') Мужские
+            menu
+              li
+                a(href='/catalog/sumki/') Сумки
+              li
+                a(href='/catalog/galstuki_1/') Галстуки
+              li
+                a(href='/catalog/babochki_1/') Бабочки
+              li
+                a(href='/catalog/podarochnye_nabory_1/') Подарочные наборы
+        button.up
+  section.bj-page-header__dropdown.b-asobio-subnav__dropdown.container-fluid(data-rel='465')
+    .i-relative
+      article
+        .row
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/verkhnyaya_odezhda_1/') Верхняя одежда
+            menu
+              li
+                a(href='/catalog/kurtki_1/') Куртки
+              li
+                a(href='/catalog/palto_1/') Пальто
+        button.up
+  section.bj-page-header__dropdown.b-asobio-subnav__dropdown.container-fluid(data-rel='444')
+    .i-relative
+      article
+        .row
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/dlya_muzhchin/') Для мужчин
+            menu
+              li
+                a(href='/catalog/kurtki_3/') Куртки
+              li
+                a(href='/catalog/palto_3/') Пальто
+              li
+                a(href='/catalog/kostyumy_1/') Костюмы
+              li
+                a(href='/catalog/pidzhaki_1/') Пиджаки
+              li
+                a(href='/catalog/bryuki_1/') Брюки
+              li
+                a(href='/catalog/rubashki_1/') Рубашки
+        button.up
+  section.bj-page-header__dropdown.b-asobio-subnav__dropdown.container-fluid(data-rel='528')
+    .i-relative
+      article
+        .row
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/muzhskaya/') Мужская
+            menu
+              li
+                a(href='/catalog/tufli_1/') Туфли
+              li
+                a(href='/catalog/botinki_1/') Ботинки
+              li
+                a(href='/catalog/krosovki_i_kedy/') Кросовки и кеды
+              li
+                a(href='/catalog/sapogi/') Сапоги
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/catalog/zhenskaya/') Женская
+            menu
+              li
+                a(href='/catalog/bosonozhki/') Босоножки
+              li
+                a(href='/catalog/krossovki/') Кроссовки
+              li
+                a(href='/catalog/tufli_2/') Туфли
+        button.up
+  section.bj-page-header__dropdown.b-asobio-subnav__dropdown(data-rel='brandtopmenu')
+    .i-relative.container-fluid
+      article
+        .row
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/roberto_cassini/') Roberto Cassini
+            menu
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/giovanni_fratelli/') Giovanni Fratelli
+            menu
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/massimo_santini/') Massimo Santini
+            menu
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/rinnaldi/') Rinnaldi
+            menu
+        .row
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/silvio_virelli/') Silvio Virelli
+            menu
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/jonh_/') John Richmond
+            menu
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/andrea_pagliarini/') Andrea Pagliarini
+            menu
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/koil/') KOIL
+            menu
+        .row
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/gnv/') GNV
+            menu
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/bazioni/') BAZIONI
+            menu
+          .col-md-3
+            .h3(style='text-transform: uppercase;')
+              a(href='/brand/absolutex/') Absolutex
+            menu
+        button.up
+  section.bj-page-header__submenu.b-asobio-subnav(style='width:100%')
+    .container-fluid
+      nav.bj-top-subnav
+        // --------------------
+        a.open(href='/catalog/muzhchinam/', data-rel='426', style='background-image: url(/upload/uf/176/176e1972e4dc54b7661d89529cd4f57c.png);') Мужчинам
+        // --------------------
+        a.open(href='/catalog/aksessuary/', data-rel='462', style='background-image: url(/upload/uf/54f/54fa34accf21888d3efe7a912d081cb9.png);') Аксессуары
+        // --------------------
+        a.open(href='/catalog/zhenshchinam/', data-rel='465', style='background-image: url(/upload/uf/fd0/fd087f54342faa794043e899bc4d5a9f.png);') Женщинам
+        // --------------------
+        a.open(href='/catalog/posledniy_razmer/', data-rel='444', style='background-image: url(/upload/uf/e43/e43d6e3ff81c35e00d21c13571437898.png);') Последний размер
+        // --------------------
+        a.open(href='/catalog/obuv/', data-rel='528', style='background-image: url();') Обувь
+        // a href="" class="open" data-rel="444" style="background-image: url(/upload/uf/e43/e43d6e3ff81c35e00d21c13571437898.png);">Распродажа</a
+        // a href="/brand/" data-rel="brandtopmenu" class="open" style="background-image: url(/upload/brand.png);">Бренды</a
+        a(href='/campaign/', style='background-image: url(/upload/campaign.png);') Акции
+  .bj-top-decoration-in-menu

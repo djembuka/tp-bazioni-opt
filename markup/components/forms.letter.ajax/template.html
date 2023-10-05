@@ -1,0 +1,54 @@
+
+<!-- start /components/forms.letter/-->
+<link rel="stylesheet" href="/components/forms.letter/style.css"/>
+<script src="/components/forms.letter/script.js"></script>
+<div class="b-forms-letter">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <form action="/components/forms.letter/response.json" method="GET">
+        <div class="b-forms-letter__error">Произошла ошибка!
+          <hr/>
+        </div>
+        <p>Мы внимательно относимся к вашему мнению и следим за качеством оказываемых услуг. Если у вас возникли проблемы или предложения, напишите нам.</p>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="b-float-label">
+              <input id="letterFormName" type="text" name="NAME" value="" autocomplete="false" data-required="true"/>
+              <label for="letterFormName">Ваше имя</label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="b-float-label">
+              <input id="letterFormEmail" type="text" name="EMAIL" value="" autocomplete="false" data-required="true"/>
+              <label for="letterFormEmail">Ваш email</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="b-float-label">
+              <input id="letterFormCompany" type="text" name="COMPANY" value="" autocomplete="false"/>
+              <label for="letterFormCompany">Название организации</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="b-float-label">
+              <textarea id="letterFormMessage" data-required="true"></textarea>
+              <label for="letterFormMessage" name="MESSAGE" value="" autocomplete="false">Сообщение</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-default btn-size-L btn-font-S btn-filled btn-disabled">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="b-forms-letter__response"><img src="/template/images/postman.jpg" alt=""/>
+    <hr class="i-size-L"/>
+    <p>Письмо отправлено успешно!<br>Мы уже доставляем его руководству.</p>
+    <hr class="i-size-L"/><a href="/catalog/" class="btn btn-default btn-size-L btn-font-S btn-filled">Перейти в каталог</a>
+  </div>
+</div>
+<!-- end /components/forms.letter/-->

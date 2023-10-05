@@ -1,0 +1,30 @@
+﻿extends ../../layouts/main.jade
+
+block title
+  title Профили заказов | Seller
+
+block content
+
+  .container-fluid
+    
+    ol.breadcrumb.hidden-xs
+      li
+        a(href='/', title='Главная страница') Главная страница
+      li
+        a(href='/cart/', title='Моя корзина') Моя корзина
+      li
+        span Профили заказов
+
+    h1 Профили заказов
+
+    .row
+      .col-sm-3
+        include ../../components/sale.personal.menu/template
+
+      hr.i-size-M.hidden.visible-xs-block
+
+      .col-sm-9
+        include ../../components/sale.personal.profile.list/template
+        
+        
+    

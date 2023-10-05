@@ -1,0 +1,205 @@
+@import '../../styl/component-include.styl'
+
+.modal
+  background-color transparent !important
+  padding 0 !important
+  max-height 100% !important
+  width auto !important
+  margin 0 !important
+  border-radius 0 !important
+  box-shadow none !important
+
+@media (min-width: 768px)
+
+  .modal-dialog 
+    width 750px
+
+.modal-backdrop
+  background #fff
+
+.modal-content
+  border-radius 0
+  border 5px solid #a3add7
+  -webkit-box-shadow none
+  box-shadow none
+  
+.modal .modal-content
+  padding 0 !important
+
+.modal-header
+  color #000
+  padding 26px
+  position relative
+  border-bottom none !important
+
+.modal-body
+  color #000
+  padding-top 40px
+  padding-bottom 40px
+
+.modal-body span,.modal-body div
+  color #000
+
+.modal-footer
+  text-align center
+  padding-top 40px
+  padding-bottom 30px
+  
+  .btn,
+  .btn+.btn
+    margin 0 12px 10px
+    
+h2.modal-title
+  
+  @media( max-width 767px )
+    font-size 12pt
+
+.bj-text-x-large
+  font-size 2.37rem
+
+.modal
+  .close
+    width 16px
+    height 16px
+    background transparent
+    font-weight 300
+    font-size 0
+    text-shadow none
+    background embedurl( 'img/close.svg' )
+    position static
+    top 30px
+    right 30px
+    margin-top 0
+    opacity 1
+    
+    &:hover
+      opacity .7
+      
+    @media( max-width 767px )
+      width 20px
+      height 20px
+      top 27px
+      right 27px
+
+.modal-dialog
+  z-index 1041
+  
+.modal .modal-footer
+  border-radius 0
+  background-color #f2f2f2
+  padding-top 30px
+  padding-bottom 30px
+  height auto
+  text-align center
+  
+/*popup*/
+.popup-window-titlebar .popup-window-top-row .popup-window-left-column,.popup-window-titlebar-light .popup-window-top-row .popup-window-left-column,.popup-window-titlebar .popup-window-top-row .popup-window-center-column,.popup-window-titlebar-light .popup-window-top-row .popup-window-center-column,.popup-window-titlebar .popup-window-top-row .popup-window-right-column,.popup-window-titlebar-light .popup-window-top-row .popup-window-right-column
+  background #f2f2f2
+  border-bottom none
+
+.popup-window-center-column
+  .popup-window-titlebar
+    border-top 1px solid #f2f2f2
+    font-size 18pt
+    font-weight 600
+    text-transform uppercase
+    text-align center
+    line-height 70px
+    
+    div
+      margin-right 60px!important
+      margin-left 60px!important
+
+.popup-window
+  border none
+  width 653px
+  
+  h1
+    font-size 22pt
+    padding 20px
+    margin-bottom 0
+    word-wrap break-word
+    box-sizing content-box
+    width 340px
+
+.popup-window-td-img
+  vertical-align middle
+  width 253px
+
+.popup-window-td-text
+  vertical-align top
+  width 380px
+
+.popup-window-close-icon
+  margin 0
+  width 15px
+  height 15px
+
+.popup-window-close-icon,.popup-window-close-icon:hover,.popup-window-close-icon:focus,.popup-window-close-icon:active
+  background url( 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIhJREFUeNq8U9ERgCAIFa5FHMZVHIpVHMZRKLrsMoG8ussvDngPeCAwc3j7MHx4SzOIiFNKYoKTz6WUkHOGrrIAJSAJFlLiR4GhbfAINv/Q2X1mlUADWoJ1BBZwd7RV1VpVcTRgjNFd1Qn0REQP+CQiTrRqEuDMjBYBKgdgXdiVoFf794+xCjAAZT5cRAINTLMAAAAASUVORK5CYII=' ) no-repeat 0 0
+
+.popup-window-buttons-hr,.popup-window-top-row,.popup-window-bottom-row,.popup-window-right-column,.popup-window-left-column
+  display none
+
+.popup-window-content
+  margin 0!important
+  padding 10px
+  
+  table
+    width 100%
+    height 362px
+    
+  img
+    width 100%!important
+    max-height 362px!important
+    
+  p
+    margin 9pt 0
+
+.popup-window-titlebar
+  .popup-window-buttons
+    margin 0
+    height 0
+
+.popup-window-buttons .col-sm-3,.popup-window-buttons .col-sm-4
+  width auto!important
+  float none!important
+  margin-left 40%
+  top -117px
+
+.popup-window-buttons
+
+  .bx_bt_button
+    display inline-block
+    margin-bottom 0
+    font-weight 400
+    text-align center
+    vertical-align middle
+    cursor pointer
+    background-image none
+    white-space nowrap
+    padding 6px 15px
+    font-size 10.5pt
+    line-height 1.72857143
+    border 2px solid #5b5b5b
+    text-shadow none
+    box-shadow none
+    font-size 10pt
+    border-radius 0
+    background #fff
+    color #5b5b5b
+    transition( all .2s ease )
+
+.popup-window-buttons .bx_bt_button:hover,
+.popup-window-buttons .bx_bt_button:active,
+.popup-window-buttons .bx_bt_button:focus
+  outline 0
+  background #a3add7
+  color #fff
+  border-color #a3add7
+  
+.popup-window-buttons
+  padding-top 30px
+  padding-bottom 30px
+  margin 0
+  background-color #f2f2f2

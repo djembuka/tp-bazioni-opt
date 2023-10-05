@@ -1,0 +1,59 @@
+﻿// start /components/forms.letter/
+
+link( rel="stylesheet", href="/components/forms.letter/style.css" )
+script( src="/components/forms.letter/script.js" )
+
+.b-forms-letter
+    
+  .row
+    
+    .col-sm-8.col-sm-offset-2
+  
+      form( action="/components/forms.letter/response.json" method="GET" )
+
+        .b-forms-letter__error Произошла ошибка!
+          hr
+      
+        p Мы внимательно относимся к вашему мнению и следим за качеством оказываемых услуг. Если у вас возникли проблемы или предложения, напишите нам.
+        
+        hr
+        
+        .row
+        
+          .col-sm-6
+          
+            .b-float-label
+              input#letterFormName( type="text" name="NAME" value="" autocomplete="false" data-required="true" )
+              label( for="letterFormName" ) Ваше имя
+        
+          .col-sm-6
+          
+            .b-float-label
+              input#letterFormEmail( type="text" name="EMAIL" value="" autocomplete="false" data-required="true" )
+              label( for="letterFormEmail" ) Ваш email
+        
+        .row
+        
+          .col-sm-6
+          
+            .b-float-label
+              input#letterFormCompany( type="text" name="COMPANY" value="" autocomplete="false" )
+              label( for="letterFormCompany" ) Название организации
+           
+        .row
+        
+          .col-sm-12
+            .b-float-label
+              textarea#letterFormMessage( data-required="true" )
+              label( for="letterFormMessage" name="MESSAGE" value="" autocomplete="false" ) Сообщение
+          
+        button.btn.btn-default.btn-size-L.btn-font-S.btn-filled.btn-disabled( type="submit" ) Отправить
+        
+  .b-forms-letter__response
+    img( src="/template/images/postman.jpg" alt="" )
+    hr.i-size-L
+    p Письмо отправлено успешно!<br>Мы уже доставляем его руководству.
+    hr.i-size-L
+    a.btn.btn-default.btn-size-L.btn-font-S.btn-filled( href="/catalog/" ) Перейти в каталог
+
+// end /components/forms.letter/

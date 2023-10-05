@@ -1,0 +1,18 @@
+﻿extends ../layouts/main.jade
+
+block title
+  title Actions page | Seller
+
+block content
+
+  .container-fluid
+  
+    ol.breadcrumb.hidden-xs
+      li
+        a(href='/', title='Главная страница') Главная страница
+      li
+        span Акции
+        
+    hr.visible-xs-block
+        
+    include ../components/actions/template

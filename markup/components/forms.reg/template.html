@@ -1,0 +1,126 @@
+
+<!-- start /components/forms.reg/-->
+<link rel="stylesheet" href="/components/forms.reg/style.css"/>
+<link rel="stylesheet" href="/components/forms.reg/template_styles.css"/>
+<script src="/components/forms.reg/script.js"></script>
+<div class="bx_registration_page">
+  <div class="bx-auth">     
+    <div class="item-feedback">Регистрация доступна только ОПТОВЫМ клиентам</div><br/>
+    <div class="b-form-wrapper">
+      <form method="post" action="/registration/" name="regform" enctype="multipart/form-data">
+        <div class="b-float-label">
+          <input id="regFormEmail" type="text" name="REGISTER[EMAIL]" value="" autocomplete="on" data-required="true"/>
+          <label for="regFormEmail">Адрес e-mail</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormPass" type="password" name="REGISTER[PASSWORD]" value="" autocomplete="off" data-required="true"/>
+          <label for="regFormPass">Пароль</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormPassConfirm" type="password" name="REGISTER[CONFIRM_PASSWORD]" value="" autocomplete="off" data-required="true"/>
+          <label for="regFormPassConfirm">Подтверждение пароля</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormName" type="text" name="REGISTER[NAME]" value="" autocomplete="on" data-required="true"/>
+          <label for="regFormName">Имя</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormLastName" type="text" name="REGISTER[LAST_NAME]" value="" autocomplete="on" data-required="true"/>
+          <label for="regFormLastName">Фамилия</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormPhone" type="tel" name="REGISTER[PERSONAL_PHONE]" value="" autocomplete="on" data-required="true"/>
+          <label for="regFormPhone">Телефон</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormCity" type="text" name="REGISTER[PERSONAL_CITY]" value="" autocomplete="on" data-required="true"/>
+          <label for="regFormCity">Город</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormCompany" type="text" name="REGISTER[WORK_COMPANY]" value="" autocomplete="on" data-required="true"/>
+          <label for="regFormCompany">Наименование компании</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormINN" type="text" name="UF_INN" value="" autocomplete="on" data-required="true"/>
+          <label for="regFormINN">ИНН</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <textarea id="letterFormUrAddress" name="UF_UR_ADDRESS" value="" cols="50" rows="5"></textarea>
+          <label for="letterFormUrAddress">Юридический адрес</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <textarea id="letterFormFizAddress" name="UF_FIZ_ADDRESS" value="" cols="50" rows="5"></textarea>
+          <label for="letterFormFizAddress">Фактический адрес</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormOGRN" type="text" name="UF_OGRN" value="" autocomplete="on"/>
+          <label for="regFormOGRN">ОГРН</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormKPP" type="text" name="UF_KPP" value="" autocomplete="on"/>
+          <label for="regFormKPP">КПП</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormRS" type="text" name="UF_RC" value="" autocomplete="on"/>
+          <label for="regFormRS">Р/С</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormBank" type="text" name="UF_BANK" value="" autocomplete="on"/>
+          <label for="regFormBank">БАНК</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormKS" type="text" name="UF_KS" value="" autocomplete="on"/>
+          <label for="regFormKS">К/С</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormBIK" type="text" name="UF_BIC" value="" autocomplete="on"/>
+          <label for="regFormBIK">БИК</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="b-float-label">
+          <input id="regFormOKPO" type="text" name="UF_OKPO" value="" autocomplete="on"/>
+          <label for="regFormOKPO">ОКПО</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div class="row b-form-captcha">
+          <div class="col-sm-4">
+            <input type="hidden" name="captcha_sid" value="0f66cffc8064931ac0fd9554aa2bc7f3"/><img src="/bitrix/tools/captcha.php?captcha_sid=0f66cffc8064931ac0fd9554aa2bc7f3" width="180" height="40" alt="CAPTCHA"/>
+          </div>
+          <hr class="visible-xs-block"/>
+          <div class="col-sm-8">
+            <div class="b-float-label">
+              <input id="regFormCaptcha" type="text" name="captcha_word" value="" autocomplete="on" data-required="true"/>
+              <label for="regFormCaptcha">Введите слово на картинке</label>
+            </div>
+          </div>
+        </div>
+        <div id="register-user-conf" style="border-bottom: 0;" class="checkbox">
+          <input id="filled-in-box" type="checkbox" value="Y" name="" class="filled-in"/>
+          <label for="filled-in-box" class="main-user-consent-request">Нажимая на кнопку «Регистрация», вы даете согласие на обработку своих персональных данных.<br/><a target="_blank" href="/about/rules/">Пользовательское соглашение</a>.</label>
+        </div>
+        <hr class="i-size-M"/>
+        <div style="border-bottom: 0;" class="button-block">
+          <input type="button" name="R" value="Регистрация" class="btn btn-default i-moke-button"/>
+          <input type="submit" name="register_submit_button" value="Регистрация" class="btn btn-default"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- end /components/forms.reg/-->

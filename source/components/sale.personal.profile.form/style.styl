@@ -1,0 +1,78 @@
+@import '../../styl/component-include.styl'
+
+#profile-form
+
+  .button
+    display inline-block
+    padding 0 25px
+    border-radius 4px
+    background-color #9A639A
+    color #fff
+    font-size 12px
+    transition( opacity .3s ease-out )
+    line-height 48px
+    height 48px
+    cursor pointer
+    width 170px
+    border 0
+
+    &:hover
+      opacity .7
+
+  .b-form-wrapper
+    border 1px solid #f2f2f2
+    padding 30px 80px
+
+    @media(max-width 767px)
+      padding 20px
+
+  .b-form-wrapper .form-group
+    border-bottom 1px solid #f2f2f2
+    padding 0 63px 20px
+    margin-bottom 15px
+
+  .b-profile-form__type
+    border 1px solid #f2f2f2
+    padding 20px 80px
+    color #000
+    margin-bottom 25px
+
+    @media(max-width 767px)
+      padding 20px
+
+    span
+      font-weight 500
+
+  .b-profile-form__title
+    border 1px solid #f3f3f3
+    padding 20px 80px
+    color #000
+    border-bottom 0
+    font-size 18px
+    font-weight 500
+
+    @media(max-width 767px)
+      padding 20px
+
+  .b-float-label label
+    white-space nowrap
+    width calc(100% - 30px)
+    overflow hidden
+
+  .b-float-label__inn
+    font-size 12px
+    font-weight 500
+    color #333
+    opacity .1
+    position absolute
+    top 10px
+    right 15px
+    cursor pointer
+    pointer-events none
+    transition( all .5s ease-out )
+    z-index 10
+
+  .show-inn .b-float-label__inn
+    opacity 1
+    color #9900cc
+    pointer-events auto

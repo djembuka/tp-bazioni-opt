@@ -1,0 +1,151 @@
+// start /components/forms.reg/
+
+link( rel="stylesheet", href="/components/forms.reg/style.css" )
+link( rel="stylesheet", href="/components/forms.reg/template_styles.css" )
+script( src="/components/forms.reg/script.js" )
+
+.bx_registration_page
+  .bx-auth      
+    .item-feedback
+      | Регистрация доступна только ОПТОВЫМ клиентам
+    br
+    .b-form-wrapper
+      form(method="post" action="/registration/" name="regform" enctype="multipart/form-data")
+      
+        .b-float-label
+          input#regFormEmail( type="text" name="REGISTER[EMAIL]" value="" autocomplete="on" data-required="true" )
+          label( for="regFormEmail" ) Адрес e-mail
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormPass( type="password" name="REGISTER[PASSWORD]" value="" autocomplete="off" data-required="true" )
+          label( for="regFormPass" ) Пароль
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormPassConfirm( type="password" name="REGISTER[CONFIRM_PASSWORD]" value="" autocomplete="off" data-required="true" )
+          label( for="regFormPassConfirm" ) Подтверждение пароля
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormName( type="text" name="REGISTER[NAME]" value="" autocomplete="on" data-required="true" )
+          label( for="regFormName" ) Имя
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormLastName( type="text" name="REGISTER[LAST_NAME]" value="" autocomplete="on" data-required="true" )
+          label( for="regFormLastName" ) Фамилия
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormPhone( type="tel" name="REGISTER[PERSONAL_PHONE]" value="" autocomplete="on" data-required="true" )
+          label( for="regFormPhone" ) Телефон
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormCity( type="text" name="REGISTER[PERSONAL_CITY]" value="" autocomplete="on" data-required="true" )
+          label( for="regFormCity" ) Город
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormCompany( type="text" name="REGISTER[WORK_COMPANY]" value="" autocomplete="on" data-required="true" )
+          label( for="regFormCompany" ) Наименование компании
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormINN( type="text" name="UF_INN" value="" autocomplete="on" data-required="true" )
+          label( for="regFormINN" ) ИНН
+          
+        hr.i-size-M
+      
+        .b-float-label
+          textarea#letterFormUrAddress( name="UF_UR_ADDRESS" value="" cols="50" rows="5" )
+          label( for="letterFormUrAddress" ) Юридический адрес
+          
+        hr.i-size-M
+      
+        .b-float-label
+          textarea#letterFormFizAddress( name="UF_FIZ_ADDRESS" value="" cols="50" rows="5" )
+          label( for="letterFormFizAddress" ) Фактический адрес
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormOGRN( type="text" name="UF_OGRN" value="" autocomplete="on" )
+          label( for="regFormOGRN" ) ОГРН
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormKPP( type="text" name="UF_KPP" value="" autocomplete="on" )
+          label( for="regFormKPP" ) КПП
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormRS( type="text" name="UF_RC" value="" autocomplete="on" )
+          label( for="regFormRS" ) Р/С
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormBank( type="text" name="UF_BANK" value="" autocomplete="on" )
+          label( for="regFormBank" ) БАНК
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormKS( type="text" name="UF_KS" value="" autocomplete="on" )
+          label( for="regFormKS" ) К/С
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormBIK( type="text" name="UF_BIC" value="" autocomplete="on" )
+          label( for="regFormBIK" ) БИК
+          
+        hr.i-size-M
+      
+        .b-float-label
+          input#regFormOKPO( type="text" name="UF_OKPO" value="" autocomplete="on" )
+          label( for="regFormOKPO" ) ОКПО
+          
+        hr.i-size-M
+              
+        .row.b-form-captcha
+        
+          .col-sm-4
+            input(type="hidden" name="captcha_sid" value="0f66cffc8064931ac0fd9554aa2bc7f3")
+            img(src="/bitrix/tools/captcha.php?captcha_sid=0f66cffc8064931ac0fd9554aa2bc7f3" width="180" height="40" alt="CAPTCHA")
+            
+          hr.visible-xs-block
+          
+          .col-sm-8
+          
+            .b-float-label
+              input#regFormCaptcha( type="text" name="captcha_word" value="" autocomplete="on" data-required="true" )
+              label( for="regFormCaptcha" ) Введите слово на картинке
+                
+        #register-user-conf.checkbox(style="border-bottom: 0;")
+          input#filled-in-box.filled-in(type="checkbox" value="Y" name="")
+          label.main-user-consent-request(for="filled-in-box")
+            | Нажимая на кнопку «Регистрация», вы даете согласие на обработку своих персональных данных.
+            br
+            a(target="_blank" href="/about/rules/") Пользовательское соглашение
+            | .
+            
+        hr.i-size-M
+        
+        .button-block(style="border-bottom: 0;")
+          input.btn.btn-default.i-moke-button(type="button" name="R" value="Регистрация")
+          input.btn.btn-default(type="submit" name="register_submit_button" value="Регистрация")
+
+// end /components/forms.reg/

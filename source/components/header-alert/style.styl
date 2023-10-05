@@ -1,0 +1,23 @@
+@import '../../styl/component-include.styl'
+
+#headerAlert
+  height 0
+  color #fff
+  font-size 16px
+  line-height 1.2
+  display flex
+  justify-content center
+  align-items center
+  background radial-gradient(farthest-corner at top, #D00000 30%, #E69135 70%) top right
+  background-size 400% 400%
+  animation gradient 10s ease infinite alternate
+  transition( height .5s ease )
+  overflow hidden
+
+  span
+    display inline-block
+    padding 0 50px
+
+@keyframes gradient
+	to
+    background-position bottom left
