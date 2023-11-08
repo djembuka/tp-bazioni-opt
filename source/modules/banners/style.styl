@@ -14,9 +14,6 @@
       display block
 
   &__item
-    background-repeat no-repeat
-    background-position center top
-    background-size cover
     position absolute
     top 0
     height 100%
@@ -52,11 +49,42 @@
     @media( max-width 575px )
       display block
       width auto !important
-      position static
+      position relative
       top auto
       left auto !important
       right auto !important
-      padding-top 100%
+      padding-top 130%
+
+    picture
+        display block
+
+        img
+            object-fit cover
+            position absolute
+            top 0
+            width 100%
+            height 100%
+            z-index 10
+
+    span
+        position absolute
+        bottom 30px
+        left 30px
+        width calc(100% - 60px)
+        background-color #fff
+        color #333
+        font-size 14.6px
+        font-family Montserrat, Arial, sans-serif
+        font-weight 600
+        line-height 16px
+        display none
+        padding 3px
+        z-index 20
+
+        @media( max-width 575px )
+            display block
+
+
 
 .b-inform-blocks [id*=bx_incl_area]
   position absolute
