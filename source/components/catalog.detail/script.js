@@ -1,7 +1,42 @@
 ﻿(function ($) {
-  'use strict';
-
   $(function () {
+    //icon copy
+    var copyToClipboard = function (str, elem) {
+      if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+        str = str.trim();
+        navigator.clipboard.writeText(str);
+        if (elem) {
+          var span = document.createElement('span');
+          span.classList.add('b-copy-icon__note');
+          span.innerText = 'Скопировано в буфер';
+          elem.appendChild(span);
+          setTimeout(function () {
+            span.classList.add('b-copy-icon__note--show');
+          }, 0);
+          setTimeout(function () {
+            span.classList.remove('b-copy-icon__note--show');
+          }, 1000);
+          setTimeout(function () {
+            span.remove();
+          }, 1500);
+        }
+        return;
+      }
+      return Promise.reject('The Clipboard API is not available.');
+    };
+
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      document.querySelectorAll('.b-copy-icon').forEach(function (icon) {
+        icon.addEventListener('click', function () {
+          var elem = icon.parentNode.querySelector('b');
+          if (!elem) {
+            elem = icon.parentNode;
+          }
+          copyToClipboard(elem.textContent, icon);
+        });
+      });
+    }
+
     //not auth block
     $('.b-catalog-detail__not-auth .btn:eq(0)').click(function (e) {
       e.preventDefault();
